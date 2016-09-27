@@ -1,0 +1,150 @@
+#version v1.1
+#日期： 2016-06-06
+#更新内容:
+u_po_role 添加 prestige_total 字段
+#差异sql:
+ALTER TABLE `u_po_user` ADD COLUMN `token`  text NULL;
+
+ALTER TABLE `u_po_user` ADD COLUMN `was_reward_diamond`  int(11) NULL;
+
+ALTER TABLE `u_po_role` ADD COLUMN `was_facebook_bind`  int(11) NULL;
+
+ALTER TABLE `u_po_user` ADD COLUMN `keep_information`  text NULL;
+
+update u_po_role set copy_scene_today_visit_times = null;
+
+update u_po_role set was_facebook_bind=0;
+
+ALTER TABLE `u_po_role` ADD COLUMN `prestige_total`  int(11) NULL;
+update u_po_role set prestige_total=0 where prestige_total is null;
+
+#越南版本
+update u_po_role set pet_constell=REPLACE(pet_constell, '#', '@' ); 
+
+
+#日期：2016-06-07
+#更新内容：u_po_user添加idfa字段
+#差异Sql:
+ALTER TABLE `u_po_user` ADD COLUMN `idfa`  varchar(255) NULL;
+
+
+#日期：2016-06-12
+#更新内容：u_po_role添加was_new_enemy字段（用于客户端显示是否是新的仇人）
+ALTER TABLE `u_po_role` ADD COLUMN `was_new_enemy`  int(11) NULL;
+update u_po_role set was_new_enemy=0 where was_new_enemy is null;
+
+#日期：2016-06-15
+#更新内容：u_po_forbid添加type字段（用于后台按角色、IP或iuid封人）
+ALTER TABLE `u_po_forbid` ADD `type`  tinyint(3) UNSIGNED NOT NULL DEFAULT 1 COMMENT '禁止类型(1：按角色，2：按IP，3：按iuid)';
+UPDATE `u_po_forbid` SET `type`=1 WHERE `type` IS NULL;
+ALTER TABLE `u_po_forbid` ADD INDEX `idx_roleName` (`role_name`(50)) USING BTREE;
+
+#日期：2016-06-16
+ALTER TABLE `u_po_role` ADD COLUMN `pack_unlock_times`  int(11) NULL;
+update u_po_role set pack_unlock_times=0 where pack_unlock_times is null;
+
+
+ALTER TABLE `u_po_role` ADD COLUMN `pick_crisital_today_times`  int(11) NULL;
+update u_po_role set pick_crisital_today_times=0 where pick_crisital_today_times is null;
+
+#修改购买次数
+update u_po_role set buy_play_times=null;
+
+ALTER TABLE `u_po_guild` ADD COLUMN `priest_fresh_count`  int NULL;
+update u_po_guild set priest_fresh_count=0 where priest_fresh_count is null;
+
+ALTER TABLE `u_po_guild` ADD COLUMN `priest_fresh_quality`  int NULL;
+update u_po_guild set priest_fresh_quality=1 where priest_fresh_quality is null;
+
+ALTER TABLE `u_po_guild` ADD COLUMN `priest_fresh_start_time`  bigint(22) NULL;
+update u_po_guild set priest_fresh_start_time=0 where priest_fresh_start_time is null;
+
+ALTER TABLE `u_po_guild` ADD COLUMN `priest_fresh_state`  int(11) NULL;
+update u_po_guild set priest_fresh_state=0 where priest_fresh_state is null;
+
+#地图boss记录修改
+update u_po_global set value_str=null where key_str='keyStaticMapBossInfo';
+
+
+
+#日期：2016-06-18
+ALTER TABLE `u_po_role` ADD COLUMN `guild_priest_state`  int(11) NULL;
+update u_po_role set guild_priest_state=0 where guild_priest_state is null;
+
+
+#日期：2016-06-23
+ALTER TABLE `u_po_user` ADD COLUMN `package_name`  varchar(255) NULL;
+
+
+#日期：2016-07-07
+#欢动更新老账号需要
+update u_po_role set open_system_list = '101,102,103,104,105,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50' where lv >=10;
+
+#日期：2016-08-01
+ALTER TABLE `u_po_role` ADD COLUMN `diamond_basins_time` int(11) NULL;
+update u_po_role set diamond_basins_time=unix_timestamp();
+update u_po_user set diamond_basins = '1|0|0,2|0|0,3|0|0,4|0|0,5|0|0,6|0|0';
+
+#日期：2016-08-04
+alter table u_po_role add column worship_diamond_first int(11);
+
+#日期:2016-08-17
+alter table u_po_role add column gamstone_fragment int(11);
+alter table u_po_role add column cimelias_id int(11);
+alter table u_po_role add column pet_skill_max_size int(11);
+
+#日期：2016-08-11
+#修复韩国17级以上玩家未开启时装
+update u_po_role set open_system_list = concat(open_system_list,',41') where lv>=17 and open_system_list not like '%,41%';
+
+#修复25级以上未开启天降宝物
+update u_po_role set open_system_list = concat(open_system_list,',51'), cimelias_id = 1 where lv>=25 and open_system_list not like '%,51%';
+
+#日期：2016-08-18
+ALTER TABLE `u_po_live_activity`
+ADD COLUMN `lot_number`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '批次号' AFTER `url`,
+ADD COLUMN `servers`  text CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '服务器' AFTER `lot_number`;
+
+#修复玩家红名时间错误
+update u_po_role set pk_status = 0, pk_value = 0, pk_last_recover_time = 0 where pk_red_begin_time is null or pk_red_begin_time=0;
+update u_po_role set pk_grew_recover_time = 0;
+
+#日期：2016-08-23
+ALTER TABLE mmo_log_db.`summary_day`
+ADD COLUMN `server_id`  int(11) UNSIGNED NULL COMMENT '服务器Id;
+ALTER TABLE mmo_log_db.`summary_hour`
+ADD COLUMN `server_id`  int(11) UNSIGNED NULL COMMENT '服务器Id';
+ALTER TABLE mmo_log_db.`summary_month`
+ADD COLUMN `server_id`  int(11) UNSIGNED NULL COMMENT '服务器Id';
+ALTER TABLE mmo_log_db.`summary_remain`
+ADD COLUMN `server_id`  int(11) UNSIGNED NULL COMMENT '服务器Id';
+
+#日期：2016-08-25
+#更新内容：`u_po_live_activity`添加`create_time`字段
+ALTER TABLE `u_po_live_activity`
+ADD COLUMN `create_time`  bigint(22) NULL DEFAULT NULL COMMENT '活动创建时间' AFTER `servers`;
+
+# 时装新功能更新修复旧数据
+alter table u_po_role modify column was_hidden_fashion varchar(255);
+update u_po_role set was_hidden_fashion = '1|1,2|0' where was_hidden_fashion = '1';
+update u_po_role set was_hidden_fashion = '1|0,2|0' where was_hidden_fashion = '0';
+
+#日期：2016-09-05
+#更新内容：`u_po_product`添加`lot_number`,`servers`,`create_time`字段
+ALTER TABLE `u_po_product`
+ADD COLUMN `lot_number`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '批次号' AFTER `min_lv`,
+ADD COLUMN `servers`  text CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '服务器' AFTER `lot_number`,
+ADD COLUMN `create_time`  bigint(22) NULL DEFAULT NULL COMMENT '活动创建时间' AFTER `servers`;
+
+#日期：2016-09-07
+#更新内容：`u_po_abroad`添加`lot_number`,`servers`,`create_time`字段
+ALTER TABLE `u_po_abroad`
+ADD COLUMN `lot_number`  varchar(255) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '批次号' AFTER `repeat_minutes`,
+ADD COLUMN `servers`  text CHARACTER SET utf8 COLLATE utf8_general_ci NULL COMMENT '服务器' AFTER `lot_number`,
+ADD COLUMN `create_time`  bigint(22) NULL DEFAULT NULL COMMENT '公告创建时间' AFTER `servers`;
+
+#日期：2019-09-07消费点修改
+alter table u_po_role add column list_consum_cost varchar(255);
+
+#日期：
+alter table u_po_role add column soul_atb text, add column soul_type int(11), add column soul int(11), add column soul_exchange_times int(11);

@@ -1,0 +1,1832 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Protocal>
+  <command id="101" order1="AbroadRemoting" order2="send">
+    <client-to-server>String msg(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="102" order1="AbroadRemoting" order2="sendChat">
+    <client-to-server>String msg(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="103" order1="AbroadRemoting" order2="list">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>List[AbroadVo](注释:null)</server-to-client>
+  </command>
+  <command id="104" order1="AbroadRemoting" order2="addEdit">
+    <client-to-server>Integer id,String noticeTime,String noticeInfo,Integer type,Integer timeType,Long startTime,Long endTime,Integer repeatMinutes,String lotNumber,String servers(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="105" order1="AbroadRemoting" order2="show">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>AbroadVo(注释:null)</server-to-client>
+  </command>
+  <command id="106" order1="AbroadRemoting" order2="delete">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="107" order1="AbroadRemoting" order2="fetchLotNumberByIds">
+    <client-to-server>String ids(注释:ids)</client-to-server>
+    <server-to-client>Object[](注释:批次号和服务区ID)</server-to-client>
+  </command>
+  <command id="108" order1="AbroadRemoting" order2="deleteByLotNumber">
+    <client-to-server>String lotNumber(注释:lotNumber 批次号("'aa','bb'"))</client-to-server>
+    <server-to-client>Integer(注释:turn)</server-to-client>
+  </command>
+  <command id="109" order1="AbroadRemoting" order2="batchDelete">
+    <client-to-server>String ids(注释:ids 活动ID)</client-to-server>
+    <server-to-client>Integer(注释:turn)</server-to-client>
+  </command>
+  <command id="201" order1="ActivityRemoting" order2="takeCumulativeLoginAward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="202" name="获取角色等级奖励" order1="ActivityRemoting" order2="takeLevelAward">
+    <client-to-server>Integer lv(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="203" order1="ActivityRemoting" order2="openOnlineAwardPanel">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="204" order1="ActivityRemoting" order2="takeOnlineTimeAward">
+    <client-to-server>Integer onlineId(注释:onlineId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="205" order1="ActivityRemoting" order2="takeLuckyWheelAward">
+    <client-to-server>Integer type(注释:type 1免费 2用钻石 3抽十次)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="206" name="领取月签到奖励" order1="ActivityRemoting" order2="takeSignInReward">
+    <client-to-server>Integer wasSignedSupplement(注释:是否补签 0：正常； 1：补签 )</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="207" order1="ActivityRemoting" order2="takeDailyLivelyTaskFinishScoreReward">
+    <client-to-server>Integer livelyId(注释:livelyId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="208" order1="ActivityRemoting" order2="takeFristRechargeAwards">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="209" order1="ActivityRemoting" order2="takeMonthCard">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="210" order1="ActivityRemoting" order2="takeDailyVipAward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="211" order1="ActivityRemoting" order2="rechargeByRechargeId">
+    <client-to-server>Integer rechargeId(注释:rechargeId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="212" order1="ActivityRemoting" order2="rechargeInterface">
+    <client-to-server>Integer roleId, Integer rechargeId, Double rechargeMoney, Integer rechargeDiamond(注释:map)</client-to-server>
+    <server-to-client>Object(注释:1:充值成功；2：没有角色； 3：没有充值配置； 4:充值金额错误; 5:充值月卡错误(月卡以存在))</server-to-client>
+  </command>
+  <command id="213" order1="ActivityRemoting" order2="fetchLiveActivity">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="214" order1="ActivityRemoting" order2="fetchLiveActivityNow">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="215" order1="ActivityRemoting" order2="awardLiveActivity">
+    <client-to-server>Integer activityId,Integer index(注释:index)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="216" order1="ActivityRemoting" order2="liveActivityRank">
+    <client-to-server>Integer activityId(注释:activityId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="217" order1="ActivityRemoting" order2="worship">
+    <client-to-server>Integer worshipType(注释:worshipType 膜拜类型 1：免费； 2：钻石)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="218" order1="ActivityRemoting" order2="fetchOffLineReward">
+    <client-to-server>Integer rewardType(注释:rewardType 奖励类型 1：普通；2:2倍领取； 3:3倍领取（只针对exp）)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="219" order1="ActivityRemoting" order2="list">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>List[LiveActivityVo](注释:null)</server-to-client>
+  </command>
+  <command id="220" order1="ActivityRemoting" order2="addEdit">
+    <client-to-server>Integer id,String name,String description,String loopFinishTimes,Integer type,Long startTime,Long endTime,String timeTxt,Integer category,Integer status,String conditionItems,String exchangeItems,String awardItems,String rateItems,Integer rank, Integer refresh(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="221" order1="ActivityRemoting" order2="saveRank">
+    <client-to-server>String ids(注释:ids)</client-to-server>
+    <server-to-client>Integer(注释:1：成功)</server-to-client>
+  </command>
+  <command id="222" order1="ActivityRemoting" order2="show">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>LiveActivityPo(注释:null)</server-to-client>
+  </command>
+  <command id="223" order1="ActivityRemoting" order2="delete">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="224" order1="ActivityRemoting" order2="batchDelete">
+    <client-to-server>String ids(注释:ids 活动ID)</client-to-server>
+    <server-to-client>Integer(注释:turn)</server-to-client>
+  </command>
+  <command id="225" order1="ActivityRemoting" order2="fetchLotNumberByIds">
+    <client-to-server>String ids(注释:ids)</client-to-server>
+    <server-to-client>Object[](注释:批次号和服务区ID)</server-to-client>
+  </command>
+  <command id="226" order1="ActivityRemoting" order2="deleteByLotNumber">
+    <client-to-server>String lotNumber(注释:lotNumber 批次号("'aa','bb'"))</client-to-server>
+    <server-to-client>Integer(注释:turn)</server-to-client>
+  </command>
+  <command id="227" order1="ActivityRemoting" order2="buyGrowFund">
+    <client-to-server>Integer typeId(注释:typeId 1.通用; 2.韩国)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="228" order1="ActivityRemoting" order2="takeGrowFund1">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="229" order1="ActivityRemoting" order2="takeGrowFund2">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="230" order1="ActivityRemoting" order2="fetchInvitationFriend">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="231" order1="ActivityRemoting" order2="useInvitationCode">
+    <client-to-server>String invitationCode(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="232" order1="ActivityRemoting" order2="addImageActivity">
+    <client-to-server>Integer id, String name, String description, Long startTime, Long endTime, Integer imageChange, String address, String lotNumber, String servers(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="233" order1="ActivityRemoting" order2="fetchDiamondBasins">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="234" order1="ActivityRemoting" order2="buyMonthCard">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="235" order1="ActivityRemoting" order2="facebookTokenBind">
+    <client-to-server>String iuid(注释:token)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="236" order1="ActivityRemoting" order2="fetchFacebookBindReward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="237" order1="ActivityRemoting" order2="addEdit">
+    <client-to-server>Integer id,String name,String description,String loopFinishTimes,Integer type,Long startTime,Long endTime,String timeTxt,Integer category,Integer status,String conditionItems,String exchangeItems,String awardItems,String rateItems,Integer rank, Integer refresh, String conditionModes(注释:null)</client-to-server>
+    <server-to-client>String(注释:turn)</server-to-client>
+  </command>
+  <command id="238" order1="ActivityRemoting" order2="receiveCimelias">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="239" order1="ActivityRemoting" order2="addEditWithLotNumber">
+    <client-to-server>Integer id,String name,String description,String loopFinishTimes,Integer type,Long startTime,Long endTime,String timeTxt,Integer category,Integer status,String conditionItems,String exchangeItems,String awardItems,String rateItems,Integer rank, Integer refresh, String conditionModes, String lotNumber, String servers(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="301" order1="BlockRemoting" order2="list">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>List[BlockVo](注释:null)</server-to-client>
+  </command>
+  <command id="302" order1="BlockRemoting" order2="addEdit">
+    <client-to-server>Integer id,String name,Long startTime,Long endTime,String note(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="303" order1="BlockRemoting" order2="show">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>BlockVo(注释:null)</server-to-client>
+  </command>
+  <command id="304" order1="BlockRemoting" order2="delete">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="401" name="发送消息" order1="ChatRemoting" order2="sendChat">
+    <client-to-server>String message,Integer channel,Integer par1,String roleName(注释:par1 参数)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="402" order1="ChatRemoting" order2="sendVoiceChat">
+    <client-to-server>String data,Integer channel,Integer par1(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="403" order1="ChatRemoting" order2="readVoiceChat">
+    <client-to-server>Integer voiceMsgId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="501" order1="ClientRemoting" order2="fetchServerList">
+    <client-to-server>String channel,String clientVersion(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="601" order1="DataRemoting" order2="kpiHour">
+    <client-to-server>Long startTime,Long endTime,String channelKeys, Integer type(注释:type（0：所有，1：设备，2：账号）)</client-to-server>
+    <server-to-client>List[HourKpiVo](注释:)</server-to-client>
+  </command>
+  <command id="602" order1="DataRemoting" order2="kpiDay">
+    <client-to-server>Long startTime,Long endTime,String channelKeys,Integer type(注释:type)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="603" order1="DataRemoting" order2="kpiMonth">
+    <client-to-server>Long startTime,Long endTime,String channelKeys,Integer type(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="604" order1="DataRemoting" order2="summaryRemain">
+    <client-to-server>Long startTime,Long endTime,Integer type, String channelKeys(注释:channelKeys)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="605" order1="DataRemoting" order2="userSummary">
+    <client-to-server>Long startTime,Long endTime,Integer filter,Integer device,Integer chargeStart,Integer chargeEnd,Integer roleId,String userIuid,String roleName, Integer iCurrPage, String orderBy, Integer sort(注释:sort（升序ture）)</client-to-server>
+    <server-to-client>Object(注释:)</server-to-client>
+  </command>
+  <command id="606" order1="DataRemoting" order2="distribute">
+    <client-to-server>Integer type,Long startTime,Long endTime,Integer filter,String ChannelsDiv,Integer vipStart,Integer vipEnd,Integer career,Integer selectUser,Integer selectDevice, Integer unLoginDays(注释:unLoginDays)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="607" order1="DataRemoting" order2="distributeInfo">
+    <client-to-server>Integer type,Long startTime,Long endTime,Integer filter,Integer vipStart,Integer vipEnd,Integer career,Integer selectUser,Integer selectDevice, Integer unLoginDays(注释:unLoginDays)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="608" order1="DataRemoting" order2="getUserSummarySize">
+    <client-to-server>Long startTime,Long endTime,Integer filter,Integer device,Integer chargeStart,Integer chargeEnd,Integer roleId,String userIuid,String roleName(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="609" order1="DataRemoting" order2="getServerTime">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="610" order1="DataRemoting" order2="findMoneyConsumeLog">
+    <client-to-server>Long startTime, Long endTime(注释:null)</client-to-server>
+    <server-to-client>List[Object[]](注释:null)</server-to-client>
+  </command>
+  <command id="611" order1="DataRemoting" order2="getSystemParticipation">
+    <client-to-server>Integer AccountDeviceSelector, String timerSelector, String channels, Integer minVip, Integer maxVip(注释:maxVip)</client-to-server>
+    <server-to-client>List[SystemPartPo](注释:turn)</server-to-client>
+  </command>
+  <command id="612" order1="DataRemoting" order2="getEveryDayKPIData">
+    <client-to-server>(注释:tableName)</client-to-server>
+    <server-to-client>Object[](注释:turn)</server-to-client>
+  </command>
+  <command id="613" order1="DataRemoting" order2="remainSummary">
+    <client-to-server>Long startTime,Long endTime,Integer type(注释:type)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="614" order1="DataRemoting" order2="kpiDayWithServer">
+    <client-to-server>Long startTime,Long endTime,String channelKeys,Integer type, String servers(注释:servers)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="615" order1="DataRemoting" order2="kpiHourWithServer">
+    <client-to-server>Long startTime,Long endTime,String channelKeys, Integer type, String servers(注释:type（0：所有，1：设备，2：账号）)</client-to-server>
+    <server-to-client>List[HourKpiVo](注释:)</server-to-client>
+  </command>
+  <command id="616" order1="DataRemoting" order2="remainSummaryWithServer">
+    <client-to-server>Long startTime,Long endTime,Integer type, String servers(注释:type)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="701" order1="ForbidRemoting" order2="list">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>List[ForbidVo](注释:null)</server-to-client>
+  </command>
+  <command id="702" order1="ForbidRemoting" order2="addEdit">
+    <client-to-server>Integer id,String name,Long startTime,Long endTime,String note(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="703" order1="ForbidRemoting" order2="addEditWithType">
+    <client-to-server>Integer id, Integer type, String name, Long startTime,Long endTime, String note(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="704" order1="ForbidRemoting" order2="show">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>ForbidVo(注释:null)</server-to-client>
+  </command>
+  <command id="705" order1="ForbidRemoting" order2="delete">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="801" order1="GuildBackRemoting" order2="getAllGuild">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>List[GuildInvitionVo](注释:turn)</server-to-client>
+  </command>
+  <command id="802" order1="GuildBackRemoting" order2="rename">
+    <client-to-server>Integer id, String newName(注释:null)</client-to-server>
+    <server-to-client>boolean(注释:是否成功)</server-to-client>
+  </command>
+  <command id="803" order1="GuildBackRemoting" order2="getGuild">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>GuildInvitionVo(注释:turn)</server-to-client>
+  </command>
+  <command id="901" order1="GuildRemoting" order2="createGuild">
+    <client-to-server>String guildName(注释:guildName)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="902" order1="GuildRemoting" order2="getGuild">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="903" order1="GuildRemoting" order2="getGuildMembers">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="904" order1="GuildRemoting" order2="invitePlayerToGuild">
+    <client-to-server>String name(注释:name)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="905" order1="GuildRemoting" order2="applyToJoinGuild">
+    <client-to-server>Integer type, Integer guildIdOrRoleId(注释:guildIdOrRoleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="906" order1="GuildRemoting" order2="guildEvents">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="907" order1="GuildRemoting" order2="guildList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="908" order1="GuildRemoting" order2="guildApplyList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="909" order1="GuildRemoting" order2="guildAcceptApplys">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="910" order1="GuildRemoting" order2="guildAcceptAllApplys">
+    <client-to-server>(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="911" order1="GuildRemoting" order2="guildDeclineApplys">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="912" order1="GuildRemoting" order2="guildPlayerProcessInvite">
+    <client-to-server>Integer guildId,Integer agree(注释:agree 1：加入公会 )</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="913" order1="GuildRemoting" order2="guildDeclineAllApplys">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="914" order1="GuildRemoting" order2="guildExit">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="915" order1="GuildRemoting" order2="guildDimiss">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="916" order1="GuildRemoting" order2="guildExchangeItem">
+    <client-to-server>Integer itemId(注释:itemId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="917" order1="GuildRemoting" order2="guildContributeItems">
+    <client-to-server>Integer itemId, Integer num(注释:itemId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="918" order1="GuildRemoting" order2="guildUpgradeBuilding">
+    <client-to-server>Integer buildingId(注释:buildingId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="919" order1="GuildRemoting" order2="guildContributeGold">
+    <client-to-server>Integer num(注释:times)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="920" order1="GuildRemoting" order2="guildBuildingSkill">
+    <client-to-server>Integer buildingId(注释:buildingId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="921" order1="GuildRemoting" order2="guildNoticeEdit">
+    <client-to-server>String notice(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="922" order1="GuildRemoting" order2="guildAutoJoin">
+    <client-to-server>Integer autoStatus(注释:autoStatus)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="923" order1="GuildRemoting" order2="guildAppoint">
+    <client-to-server>Integer targetRoleId, Integer position(注释:position 职位)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="924" order1="GuildRemoting" order2="guildExpelled">
+    <client-to-server>Integer targetRoleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="925" order1="GuildRemoting" order2="guildMapLandOwners">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="926" order1="GuildRemoting" order2="guildSiege">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="927" order1="GuildRemoting" order2="guildBidSiege">
+    <client-to-server>Integer slot(注释:slot 1~3)</client-to-server>
+    <server-to-client>Object(注释:)</server-to-client>
+  </command>
+  <command id="928" order1="GuildRemoting" order2="guildAwardSiege">
+    <client-to-server>(注释:slot 1~3)</client-to-server>
+    <server-to-client>Object(注释:)</server-to-client>
+  </command>
+  <command id="929" order1="GuildRemoting" order2="guildAwardOwner">
+    <client-to-server>(注释:slot)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="930" order1="GuildRemoting" order2="fetchGuildBossAward">
+    <client-to-server>Integer copysceneconfId(注释:copysceneconfId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="931" order1="GuildRemoting" order2="flushGuildPriest">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="932" order1="GuildRemoting" order2="startGuildPriest">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1001" name="穿装备" order1="ItemRemoting" order2="equip">
+    <client-to-server>Integer mainPackIndex,Integer equipSlot(注释:equipSlot)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1002" name="脱装备" order1="ItemRemoting" order2="unEquip">
+    <client-to-server>Integer equipSlot(注释:equipSlot)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1003" order1="ItemRemoting" order2="sellPackItem">
+    <client-to-server>Integer index, Integer num(注释:index)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1004" order1="ItemRemoting" order2="sellPackItemOneKey">
+    <client-to-server>String indexStr(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1005" order1="ItemRemoting" order2="oneKeyEquip">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1006" name="整理背包" order1="ItemRemoting" order2="setPack">
+    <client-to-server>Integer type(注释:type 1=背包 5=仓库)</client-to-server>
+    <server-to-client>Object(注释:[0]pcaktype [1]map)</server-to-client>
+  </command>
+  <command id="1007" order1="ItemRemoting" order2="powerEquip">
+    <client-to-server>Integer equipId,Integer itemId(注释:itemId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1008" name="拍卖行-卖东西" order1="ItemRemoting" order2="auctionSell">
+    <client-to-server>Integer roleMainPackIndex,Integer count,Integer totalPrice,Integer sellType(注释:sellType 寄售类型：0普通; 1钻石;)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1009" name="拍卖行-读取我的售卖列表" order1="ItemRemoting" order2="auctionFetchMySellList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1010" name="拍卖行-搜索拍卖列表" order1="ItemRemoting" order2="auctionFetchSeachList">
+    <client-to-server>String keyword,Integer type,Integer category(注释:category)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1011" name="拍卖行-取消拍卖" order1="ItemRemoting" order2="auctionCancelAuction">
+    <client-to-server>Integer auctionId(注释:category)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1012" name="拍卖行-购买卖品" order1="ItemRemoting" order2="auctionBuyAuction">
+    <client-to-server>Integer auctionId(注释:auctionId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1013" order1="ItemRemoting" order2="auctionShowItem">
+    <client-to-server>Integer auctionId(注释:auctionId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1014" order1="ItemRemoting" order2="chatShowItem">
+    <client-to-server>Integer itemId(注释:itemId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1015" order1="ItemRemoting" order2="chatShowEqpInfor">
+    <client-to-server>Integer eqpId(注释:itemId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1016" order1="ItemRemoting" order2="showAuctionInfor">
+    <client-to-server>Integer auctionId(注释:auctionId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1017" order1="ItemRemoting" order2="showEquipInfor">
+    <client-to-server>Integer eqpId(注释:auctionId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1018" order1="ItemRemoting" order2="itemUse">
+    <client-to-server>Integer mainPackIndex,Integer num(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1019" order1="ItemRemoting" order2="hpMedicineUse">
+    <client-to-server>Integer mainPackIndex(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1020" order1="ItemRemoting" order2="mpMedicineUse">
+    <client-to-server>Integer mainPackIndex(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1021" order1="ItemRemoting" order2="splitPackItem">
+    <client-to-server>Integer index, Integer num(注释:index)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1022" order1="ItemRemoting" order2="npcSellItem">
+    <client-to-server>Integer monsterId,Integer itemId,Integer num(注释:num)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1023" order1="ItemRemoting" order2="productSellItem">
+    <client-to-server>Integer productId, Integer num(注释:num)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1024" order1="ItemRemoting" order2="mergeItem">
+    <client-to-server>Integer mergeId,Integer num(注释:num)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1025" order1="ItemRemoting" order2="putInByWareHouse">
+    <client-to-server>String indexStr(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1026" order1="ItemRemoting" order2="takeOutByWarehouse">
+    <client-to-server>String indexStr(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1027" order1="ItemRemoting" order2="putInGoldOrBindGoldByWareHouse">
+    <client-to-server>Integer goldType, Integer num(注释:num)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1028" order1="ItemRemoting" order2="takeOutGoldOrBindGoldByWarehouse">
+    <client-to-server>Integer goldType, Integer num(注释:num)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1029" order1="ItemRemoting" order2="getMatchedItem">
+    <client-to-server>String term, Integer maxLength(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1030" order1="ItemRemoting" order2="useChoiceItem">
+    <client-to-server>Integer mainPackIndex,Integer choiceId(注释:choiceId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1101" name="返回邮件列表 " order1="MailRemoting" order2="mailLoadAll">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:[0]List&lt;SimpleMailHeadVo&gt;)</server-to-client>
+  </command>
+  <command id="1102" name="得到具体邮件 [0]mailPo [1]rolePo.getMailUnread()" order1="MailRemoting" order2="mailLoadDetail">
+    <client-to-server>Integer mailId(注释:mailId)</client-to-server>
+    <server-to-client>Object(注释:[0]=MailPo [1]hasUnreadMail (short))</server-to-client>
+  </command>
+  <command id="1103" name="删除邮件" order1="MailRemoting" order2="mailDeleteByMulti">
+    <client-to-server>String mailIds(注释:_mailIds)</client-to-server>
+    <server-to-client>Object(注释:[0]List&lt;SimpleMailHeadVo&gt; [1]rolePo.getMailUnread())</server-to-client>
+  </command>
+  <command id="1104" name="发送邮件 " order1="MailRemoting" order2="mailSend">
+    <client-to-server>Integer targetRoleId,String content(注释:content)</client-to-server>
+    <server-to-client>List[SimpleMailHeadVo](注释:[0]List&lt;SimpleMailHeadVo&gt;)</server-to-client>
+  </command>
+  <command id="1105" name="获得附件道具" order1="MailRemoting" order2="mailObtainAttach">
+    <client-to-server>Integer mailId(注释:mailId)</client-to-server>
+    <server-to-client>Object(注释:[0]mailPo)</server-to-client>
+  </command>
+  <command id="1106" order1="MailRemoting" order2="mailOneKeyAttach">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1107" order1="MailRemoting" order2="mailOneKeyDelete">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:)</server-to-client>
+  </command>
+  <command id="1108" order1="MailRemoting" order2="clientNewMail">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1109" order1="MailRemoting" order2="send">
+    <client-to-server>String mailTitle,String mailText,Long startTime,Long endTime,String mailAttach,Integer mailGroup,String mailNames,Integer minLv,Integer minVipLv,Integer maxLv,Integer maxVipLv,String ChannelsDiv,String server_ids,String adminName(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1110" order1="MailRemoting" order2="queryList">
+    <client-to-server>Long startTime,Long endTime,String mailTitle,String adminName(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1111" order1="MailRemoting" order2="singleDelete">
+    <client-to-server>Integer delcurrentItemId,String delMailTitle,String delAttaches,String delAdminName,Integer delTtotalNum,Long startTime,Long endTime,String mailTitle,String adminName(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1112" order1="MailRemoting" order2="allDelete">
+    <client-to-server>String ids,Long startTime,Long endTime,String mailTitle,String adminName(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1113" order1="MailRemoting" order2="search">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1114" order1="MailRemoting" order2="searchAll">
+    <client-to-server>Long startTime, Long endTime(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1115" order1="MailRemoting" order2="searchByRoleId">
+    <client-to-server>Long startTime, Long endTime, Integer value(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1116" order1="MailRemoting" order2="searchByRoleName">
+    <client-to-server>Long startTime, Long endTime, String value(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1201" order1="MapRemoting" order2="requestTrackPlayer">
+    <client-to-server>Integer roleId,Integer costDiamond(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1202" order1="MapRemoting" order2="summonToMyPlace">
+    <client-to-server>Integer roleId,Float x,Float y,Float z(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1203" order1="MapRemoting" order2="blink">
+    <client-to-server>Integer entityId,Float x,Float y,Float z(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1204" order1="MapRemoting" order2="move">
+    <client-to-server>Integer entityId,Float x,Float y,Float z,String entityName(注释:entityName)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1205" order1="MapRemoting" order2="moveStop">
+    <client-to-server>Integer entityId,Float x,Float y,Float z(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1206" order1="MapRemoting" order2="updateMove">
+    <client-to-server>Integer entityId,Float x,Float y,Float z(注释:z 当前位置)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1207" name="释放技能" order1="MapRemoting" order2="skill">
+    <client-to-server>Integer skillId,Integer casterId,Integer selectEntityId,String targetEntityIds,Integer attractIndex,Float x,Float y,Float z(注释:targetEntityIds 作用目标的实体编号,at符号分割)</client-to-server>
+    <server-to-client>void(注释:turn)</server-to-client>
+  </command>
+  <command id="1208" name="进入房间" order1="MapRemoting" order2="enterRoom">
+    <client-to-server>Integer roomId,Integer x,Integer y,Integer z,Integer type,Integer teleportType(注释:teleportType 传送类型 0：普通传送； 1：金币传送)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1209" order1="MapRemoting" order2="refreshNearByEntitys">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1210" order1="MapRemoting" order2="leaveRoom">
+    <client-to-server>Integer roomId, Integer leaverType(注释:leaverType 0:默认； 1：下线；)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1211" order1="MapRemoting" order2="pickTreasure">
+    <client-to-server>String treasureIds(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1212" order1="MapRemoting" order2="attackModeChange">
+    <client-to-server>Integer casterId,Integer attackMode, Integer wasStrongChange(注释:wasStrongChange 是否强行改掉 0：默认； 1：强行切换pk模式)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1213" name="结束施法姿态" order1="MapRemoting" order2="endCastPose">
+    <client-to-server>Integer casterId(注释:casterId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1214" order1="MapRemoting" order2="positionStop">
+    <client-to-server>Integer entityId,Integer x,Integer y,Integer z(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1215" order1="MapRemoting" order2="roomRequireFreshMonsterGroup">
+    <client-to-server>Integer groupId(注释:groupId 组编号)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1216" order1="MapRemoting" order2="roomRequireArenaFreshRole">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1217" order1="MapRemoting" order2="updateListenerMapIds">
+    <client-to-server>String ids(注释:ids)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1218" order1="MapRemoting" order2="agentMonster">
+    <client-to-server>Integer monsterMapId(注释:monsterMapId)</client-to-server>
+    <server-to-client>void(注释:turn)</server-to-client>
+  </command>
+  <command id="1219" order1="MapRemoting" order2="summonFightPet">
+    <client-to-server>Integer x,Integer y,Integer z(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1220" order1="MapRemoting" order2="dismissFightPet">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1221" order1="MapRemoting" order2="summonYunCart">
+    <client-to-server>Integer x,Integer y,Integer z(注释:z)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1222" order1="MapRemoting" order2="dismissYunCart">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1223" order1="MapRemoting" order2="findRoleMapInfor">
+    <client-to-server>Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1224" order1="MapRemoting" order2="mapItemResourcePick">
+    <client-to-server>Integer entityId(注释:entityId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1225" name="触发buff" order1="MapRemoting" order2="buff">
+    <client-to-server>Integer buffId, Integer entityId,String entityIds, Integer params,Integer tagerRoleId(注释:params buff参数)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1226" order1="MapRemoting" order2="fetchRandomMonsterPoint">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1227" order1="MapRemoting" order2="fetchMonsterBossHitRank">
+    <client-to-server>Integer entityId(注释:entityId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1228" order1="MapRemoting" order2="newbieEndHpRecover">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1301" order1="PetRemoting" order2="petRoll">
+    <client-to-server>Integer rollType(注释:way 1=金币抽取 2=钻石抽取 3=金币十连抽 4=钻石十连抽 5抽取免费次数)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1302" order1="PetRemoting" order2="positionFight">
+    <client-to-server>Integer rpetId(注释:rpetId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1303" order1="PetRemoting" order2="positionReset">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1304" order1="PetRemoting" order2="changeName">
+    <client-to-server>Integer rpetId,String name(注释:name)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1305" order1="PetRemoting" order2="disolve">
+    <client-to-server>String rpetIds(注释:rpetIds)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1306" order1="PetRemoting" order2="ugrade">
+    <client-to-server>Integer rpetId(注释:rpetId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1307" order1="PetRemoting" order2="ugradeOneKey">
+    <client-to-server>Integer rpetId(注释:rpetId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1308" order1="PetRemoting" order2="petConstellStrengthen">
+    <client-to-server>Integer type, Integer constellId(注释:constellId 星座ID)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1309" order1="PetRemoting" order2="petTalentUpLevel">
+    <client-to-server>Integer alentId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1310" order1="PetRemoting" order2="petSkillLearn">
+    <client-to-server>Integer rpetId, Integer skillId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1401" order1="ProductRemoting" order2="list">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>List[ProductVo](注释:null)</server-to-client>
+  </command>
+  <command id="1402" order1="ProductRemoting" order2="addEdit">
+    <client-to-server>Integer id,Integer itemId,Long itemSell,Long timeOff,Integer moneyType,Integer originalPrice,Integer discountsPrice,Integer buyCount,String dayCount,Integer promotions,Integer onetimeCount,Integer shopTab,Integer buyViplv,Integer totalCount,Integer minLv,String lotNumber,String servers(注释:null)</client-to-server>
+    <server-to-client>Integer(注释:null)</server-to-client>
+  </command>
+  <command id="1403" order1="ProductRemoting" order2="show">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>ProductVo(注释:null)</server-to-client>
+  </command>
+  <command id="1404" order1="ProductRemoting" order2="delete">
+    <client-to-server>Integer id(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1405" order1="ProductRemoting" order2="fetchProductList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1406" order1="ProductRemoting" order2="fetchLotNumberByIds">
+    <client-to-server>String ids(注释:ids)</client-to-server>
+    <server-to-client>Object[](注释:批次号和服务区ID)</server-to-client>
+  </command>
+  <command id="1407" order1="ProductRemoting" order2="deleteByLotNumber">
+    <client-to-server>String lotNumber(注释:lotNumber 批次号("'aa','bb'"))</client-to-server>
+    <server-to-client>Integer(注释:turn)</server-to-client>
+  </command>
+  <command id="1408" order1="ProductRemoting" order2="batchDelete">
+    <client-to-server>String ids(注释:ids 活动ID)</client-to-server>
+    <server-to-client>Integer(注释:turn)</server-to-client>
+  </command>
+  <command id="1501" order1="PushRemoting" order2="sendUpdateRole">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1502" order1="PushRemoting" order2="updateRoleTreasure">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1503" order1="PushRemoting" order2="updateSingleRolePack">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1504" order1="PushRemoting" order2="updateRolePack">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1505" order1="PushRemoting" order2="updateRoleExpAndLv">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1506" order1="PushRemoting" order2="updateRoleEquips">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1507" order1="PushRemoting" order2="updateRoleBats">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1508" order1="PushRemoting" order2="updateRoleEquipSlot">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1509" order1="PushRemoting" order2="updateRoleBatPros">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1510" order1="PushRemoting" order2="systemMsg">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1511" order1="PushRemoting" order2="sendTeamInvitition">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1512" order1="PushRemoting" order2="sendRequireEnterRoom">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1513" order1="PushRemoting" order2="sendAskTeamEnterRoom">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1514" order1="PushRemoting" order2="sendApplyToJoinTeam">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1515" order1="PushRemoting" order2="sendUpdateTeamInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1516" order1="PushRemoting" order2="sendUpdatePKInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1517" order1="PushRemoting" order2="sendCopySceneFinish">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1518" order1="PushRemoting" order2="sendUpdateTaskProgress">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1519" order1="PushRemoting" order2="sendUpdateShowMsg">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1520" order1="PushRemoting" order2="sendUpdateSkillPoint">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1521" order1="PushRemoting" order2="sendUpdateEquip">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1522" order1="PushRemoting" order2="sendUpdateResurInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1523" order1="PushRemoting" order2="sendUpdateCurrentTime">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1524" order1="PushRemoting" order2="sendUpdateGuildInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1525" order1="PushRemoting" order2="sendUpdateRelations">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1526" order1="PushRemoting" order2="sendUpdateGuildInvititions">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1527" order1="PushRemoting" order2="sendUpdateWingInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1528" order1="PushRemoting" order2="sendUpdatePetInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1529" order1="PushRemoting" order2="sendUpdatePetList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1530" order1="PushRemoting" order2="sendUpdateRpet">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1531" order1="PushRemoting" order2="sendUpdateBuyProductList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1532" order1="PushRemoting" order2="sendUpdateSoulSlot">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1533" order1="PushRemoting" order2="sendUpdateRankMap">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1534" order1="PushRemoting" order2="sendUpdateCalculate">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1535" order1="PushRemoting" order2="sendUpdateOpenSystem">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1536" order1="PushRemoting" order2="sendUpdateRoleTasks">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1537" order1="PushRemoting" order2="sendUpdateCopySceneTodayVisitTimes">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1538" order1="PushRemoting" order2="sendUpdateRoleOptions">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1539" order1="PushRemoting" order2="sendRequestTransferToPlayer">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1540" order1="PushRemoting" order2="sendReceieveSummonInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1541" order1="PushRemoting" order2="sendUpdateAchieveAndTitle">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1542" order1="PushRemoting" order2="sendCumulativeLoginAward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1543" order1="PushRemoting" order2="sendLevelAward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1544" order1="PushRemoting" order2="sendOnlineTimeAward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1545" order1="PushRemoting" order2="sendUpdateDailyLivelyAward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1546" order1="PushRemoting" order2="sendUpdateAwardRetrieve">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1547" order1="PushRemoting" order2="sendUpdatePetConstell">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1548" order1="PushRemoting" order2="sendUpdatePetTalent">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1549" order1="PushRemoting" order2="sendBeAttacked">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1550" order1="PushRemoting" order2="sendUpdateAdvanceSuitPlus">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1551" order1="PushRemoting" order2="sendSustainKill">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1552" order1="PushRemoting" order2="sendUpdateTeamDungeon">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1553" order1="PushRemoting" order2="sendUpdateDungeonTeamInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1554" order1="PushRemoting" order2="sendNearByFriendAddRequest">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1555" order1="PushRemoting" order2="sendAddFashion">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1556" order1="PushRemoting" order2="sendUpdateCopySceneAativityWasOpenInfo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1557" order1="PushRemoting" order2="sendUpdateTeamMemberHpChange">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1558" order1="PushRemoting" order2="sendUpdateRechargeInfo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1559" order1="PushRemoting" order2="sendUpdateActivitysList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1560" order1="PushRemoting" order2="sendUpdateRoleActivitysList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1561" order1="PushRemoting" order2="sendUpdateKillingTower">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1562" order1="PushRemoting" order2="sendUpdatePVPPVEActivity">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1563" order1="PushRemoting" order2="sendUpdatePVPPVEActivityRank">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1564" order1="PushRemoting" order2="sendFreeWarScoreRankUpdate1">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1565" order1="PushRemoting" order2="sendFreeWarScoreRankUpdate2">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1566" order1="PushRemoting" order2="sendUpdateYunDartTaskInfo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1567" order1="PushRemoting" order2="sendUpdateAddGuildTips">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1568" order1="PushRemoting" order2="sendUpdateHorse">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1569" order1="PushRemoting" order2="sendUpdateClientMailUnRead">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1570" order1="PushRemoting" order2="sendUpdateGuildPoMembersInfo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1571" order1="PushRemoting" order2="sendUpdateGuildBossInfo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1572" order1="PushRemoting" order2="sendUpdateClientRechargeDiamond">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1573" order1="PushRemoting" order2="sendUpdateListGuildBossAward">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1574" order1="PushRemoting" order2="sendUpdateLogVo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1575" order1="PushRemoting" order2="sendUpdateListBufferStatus">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1576" order1="PushRemoting" order2="sendIAmKicked">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1577" order1="PushRemoting" order2="sendUpdateTreasureList">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1578" order1="PushRemoting" order2="sendUpdateTreasureOpen">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1579" order1="PushRemoting" order2="sendUpdateListEachFirstRechargeStatus">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1580" order1="PushRemoting" order2="sendUpdateNewbieStepGroup">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1581" order1="PushRemoting" order2="sendSessionLost">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1582" order1="PushRemoting" order2="sendResourceScene">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1583" order1="PushRemoting" order2="sendUpdateClientGuildExitTime">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1584" order1="PushRemoting" order2="sendUpdateGrowFund1Info">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1585" order1="PushRemoting" order2="sendUpdateGrowFund2Info">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1586" order1="PushRemoting" order2="sendUpdateListInvitationTask">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1587" order1="PushRemoting" order2="sendUpdatelistDiamondBasins">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1588" order1="PushRemoting" order2="sendUpdateLoginQueueInfo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1589" order1="PushRemoting" order2="sendUpdateUnPackTimes">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1590" order1="PushRemoting" order2="sendUpdateWasNewEnemy">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1591" order1="PushRemoting" order2="sendUpdatePickCrisitalTodayTimes">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1592" order1="PushRemoting" order2="sendUpdateGuildPriestStart">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1593" order1="PushRemoting" order2="sendUpdateRoleCimeliasStep">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1594" order1="PushRemoting" order2="sendUpdateRoleConsumCostVos">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1601" order1="RoleRemoting" order2="createRole">
+    <client-to-server>Integer userId,String name,Integer modelId(注释:modelId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1602" order1="RoleRemoting" order2="checkDeleteRole">
+    <client-to-server>Integer userId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1603" order1="RoleRemoting" order2="deleteRole">
+    <client-to-server>Integer userId,Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1604" order1="RoleRemoting" order2="unDeleteRole">
+    <client-to-server>Integer userId,Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1605" order1="RoleRemoting" order2="login">
+    <client-to-server>Integer roleId(注释:pass 密码)</client-to-server>
+    <server-to-client>Object(注释:rolePo)</server-to-client>
+  </command>
+  <command id="1606" order1="RoleRemoting" order2="logoff">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1607" name="获得角色任务" order1="RoleRemoting" order2="fetchRoleTasks">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1608" order1="RoleRemoting" order2="upgradeWing">
+    <client-to-server>Integer consumeType, Integer wasAuto(注释:wasAuto 是否自动消耗道具 0：手动; 1:自动)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1609" order1="RoleRemoting" order2="hiddenOrShowWing">
+    <client-to-server>Integer type(注释:type)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1610" name="获得排行信息" order1="RoleRemoting" order2="getRankInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1611" order1="RoleRemoting" order2="roleOptionsStatusByType">
+    <client-to-server>Integer optionsType,Integer optionsStatus(注释:optionsStatus 1:默认； 0:拒绝)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1612" order1="RoleRemoting" order2="upgradeTitle">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:)</server-to-client>
+  </command>
+  <command id="1613" order1="RoleRemoting" order2="awardRetrieve">
+    <client-to-server>Integer retrieveId, Integer type(注释:type 奖励找回类型（1金币找回2钻石找回）)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1614" order1="RoleRemoting" order2="allRetrieve">
+    <client-to-server>Integer type(注释:type 奖励找回类型（1金币找回2钻石找回）)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1615" order1="RoleRemoting" order2="buyFashion">
+    <client-to-server>Integer id, Integer time(注释:id 时装ID)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1616" order1="RoleRemoting" order2="useFashion">
+    <client-to-server>Integer id(注释:id 时装ID)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1617" order1="RoleRemoting" order2="checkRemoveFashion">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1618" order1="RoleRemoting" order2="wasHiddenFashion">
+    <client-to-server>Integer type(注释:id)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1619" order1="RoleRemoting" order2="fetchRoleInfor">
+    <client-to-server>String name(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1620" order1="RoleRemoting" order2="fetchRoleInforById">
+    <client-to-server>Integer roleId(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1621" order1="RoleRemoting" order2="fetchIuidById">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>String(注释:turn)</server-to-client>
+  </command>
+  <command id="1622" order1="RoleRemoting" order2="fetchIuidByName">
+    <client-to-server>String name(注释:roleId)</client-to-server>
+    <server-to-client>String(注释:turn)</server-to-client>
+  </command>
+  <command id="1623" order1="RoleRemoting" order2="recover">
+    <client-to-server>String name(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1624" order1="RoleRemoting" order2="taskFinish">
+    <client-to-server>String type, String value(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1625" order1="RoleRemoting" order2="taskSubFinish">
+    <client-to-server>String type,String taskName, String value(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1626" order1="RoleRemoting" order2="fetchRoleActionNum">
+    <client-to-server>String value, Long startTime,Long endTime,Integer logCat,Integer resType,Integer resChange,Integer actionType,Integer requireExport, String type(注释:null)</client-to-server>
+    <server-to-client>Integer(注释:null)</server-to-client>
+  </command>
+  <command id="1627" order1="RoleRemoting" order2="fetchRoleAction">
+    <client-to-server>String value, Long startTime,Long endTime,Integer logCat,Integer resType,Integer resChange,Integer actionType,Integer requireExport, String type, Integer currentPage, Integer num, Integer timezoneOffset(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1628" name="更新新手步骤" order1="RoleRemoting" order2="updateNewbieStep">
+    <client-to-server>Integer step(注释:step)</client-to-server>
+    <server-to-client>void(注释:null)</server-to-client>
+  </command>
+  <command id="1629" order1="RoleRemoting" order2="fetchFirstThreeRanks">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1630" order1="RoleRemoting" order2="upgradeMilitaryRank">
+    <client-to-server>(注释:militaryRankId 需要升级的军衔Id)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1631" order1="RoleRemoting" order2="buyPlayTimesByType">
+    <client-to-server>Integer timesType(注释:timesType)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1632" order1="RoleRemoting" order2="takeTreasureAward">
+    <client-to-server>Integer treasureId(注释:treasureId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1633" order1="RoleRemoting" order2="exchangeGiftCode">
+    <client-to-server>String code,Integer serverId,Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1634" order1="RoleRemoting" order2="changeRoleName">
+    <client-to-server>String name(注释:name)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1635" order1="RoleRemoting" order2="lastOutOnline">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1636" order1="RoleRemoting" order2="manageServerUpdateRolePoAttributeByType">
+    <client-to-server>Integer type, Integer value, String roleName, Integer roleId(注释:value)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1637" order1="RoleRemoting" order2="resetRolePo">
+    <client-to-server>String roleName, Integer roleId(注释:value)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1638" order1="RoleRemoting" order2="modifyName">
+    <client-to-server>String value, String roleName, Integer roleId(注释:value)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1639" order1="RoleRemoting" order2="deleteOneItem">
+    <client-to-server>Integer deleteType, Integer itemId, Integer bindOrNot, String playerName, Integer playerId,Integer num(注释:playerId（角色ID）)</client-to-server>
+    <server-to-client>Object(注释:删除成功信息)</server-to-client>
+  </command>
+  <command id="1640" order1="RoleRemoting" order2="deleteRoleItem">
+    <client-to-server>Integer deleteType, Integer itemId, Integer bindOrNot, String playerName, Integer playerId,Integer num(注释:num 删除数量)</client-to-server>
+    <server-to-client>Object(注释:删除成功信息（true:成功,false:失败）)</server-to-client>
+  </command>
+  <command id="1641" order1="RoleRemoting" order2="fetchRoleActionNumWithKeyword">
+    <client-to-server>String value, Long startTime,Long endTime,Integer logCat,Integer resType,Integer resChange,Integer actionType,Integer requireExport, String type, String keyword, Integer itemId(注释:null)</client-to-server>
+    <server-to-client>Integer(注释:null)</server-to-client>
+  </command>
+  <command id="1642" order1="RoleRemoting" order2="fetchRoleActionWithKeyword">
+    <client-to-server>String value, Long startTime,Long endTime,Integer logCat,Integer resType,Integer resChange,Integer actionType,Integer requireExport, String type, Integer currentPage, Integer num, Integer timezoneOffset, String keyword, Integer itemId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1643" order1="RoleRemoting" order2="fetchRole">
+    <client-to-server>Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1644" order1="RoleRemoting" order2="fetchRoleActionNumWithKeywordAndResTypes">
+    <client-to-server>String value, Long startTime,Long endTime,Integer logCat,String resTypes,Integer resChange,String actionType,Integer requireExport, String type, String keyword, Integer itemId(注释:null)</client-to-server>
+    <server-to-client>Integer(注释:null)</server-to-client>
+  </command>
+  <command id="1645" order1="RoleRemoting" order2="fetchRoleActionWithKeywordAndResTypes">
+    <client-to-server>String value, Long startTime,Long endTime,Integer logCat,String resTypes,Integer resChange,String actionType,Integer requireExport, String type, Integer currentPage, Integer num, Integer timezoneOffset, String keyword, Integer itemId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1646" order1="RoleRemoting" order2="updateRoleEquip">
+    <client-to-server>Integer equipId, Integer powerLv, String attach, String playerName, Integer playerId(注释:playerId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1701" order1="ServerRemoting" order2="syncData">
+    <client-to-server>String[]tables,byte[] out,Boolean reCre(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1702" order1="ServerRemoting" order2="getDicClientList">
+    <client-to-server>Integer requireUpdate(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1703" order1="ServerRemoting" order2="getStaticData">
+    <client-to-server>Integer requireUpdateGameData(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1" order1="ServerRemoting" order2="getOrderStringIdMap">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1705" order1="ServerRemoting" order2="test">
+    <client-to-server>Integer par1,String par2,String par3,Double par4(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1707" order1="ServerRemoting" order2="getTime">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="3" name="支持客户端重连" order1="ServerRemoting" order2="reconnect">
+    <client-to-server>String iuid(注释:iuid)</client-to-server>
+    <server-to-client>Object(注释:1)</server-to-client>
+  </command>
+  <command id="1709" order1="ServerRemoting" order2="fetchInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1710" order1="ServerRemoting" order2="net">
+    <client-to-server>Integer filter,Integer limit(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1711" order1="ServerRemoting" order2="readSetting">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1712" order1="ServerRemoting" order2="settings">
+    <client-to-server>Integer monthCard,Integer auction,Integer LiveActivity,Integer giftCode,String lang,Integer facebook,Integer growth,Integer growthko,Integer rank,Integer shopScore,Integer inviteFriend,Integer charge, Integer shake,Integer onlineMaxNum,Integer battleMsg,Integer oldPlayerReward, Integer luckyTurn(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1713" order1="ServerRemoting" order2="serverSettings">
+    <client-to-server>Integer monthCard,Integer auction,Integer LiveActivity,Integer giftCode,String lang,Integer facebook,Integer growth,Integer growthko,Integer rank,Integer shopScore,Integer inviteFriend,Integer charge, Integer shake,Integer onlineMaxNum,Integer battleMsg,Integer oldPlayerReward, Integer luckyTurn, Integer singleStory, Integer kingActivity(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1714" order1="ServerRemoting" order2="serverSettingsWithServerId">
+    <client-to-server>Integer monthCard,Integer auction,Integer LiveActivity,Integer giftCode,String lang,Integer facebook,Integer growth,Integer growthko,Integer rank,Integer shopScore,Integer inviteFriend,Integer charge, Integer shake,Integer onlineMaxNum,Integer battleMsg,Integer oldPlayerReward, Integer luckyTurn, Integer singleStory, Integer kingActivity, Integer wingAvatar, String serverId, Integer bossBackroom(注释:null)</client-to-server>
+    <server-to-client>String(注释:null)</server-to-client>
+  </command>
+  <command id="1715" order1="ServerRemoting" order2="kpiResult">
+    <client-to-server>Integer type,Long startTime(注释:null)</client-to-server>
+    <server-to-client>(注释:null)</server-to-client>
+  </command>
+  <command id="1716" order1="ServerRemoting" order2="backTime">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>(注释:null)</server-to-client>
+  </command>
+  <command id="1717" order1="ServerRemoting" order2="exportMerge">
+    <client-to-server>String targetDb,String sourceDb,Integer targetServerId,String targetServerPrefix1,String targetServerPrefix2,Integer clean(注释:null)</client-to-server>
+    <server-to-client>(注释:null)</server-to-client>
+  </command>
+  <command id="1718" order1="ServerRemoting" order2="exception">
+    <client-to-server>Long startTime,Long endTime,Integer limit,Integer exceptionType(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1719" order1="ServerRemoting" order2="createCDNResources">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1720" order1="ServerRemoting" order2="fetchServerInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1801" name="保存技能阵型" order1="SkillRemoting" order2="saveSkillFormation">
+    <client-to-server>String formationStr(注释:str)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1802" name="升级技能" order1="SkillRemoting" order2="upgradeSkill">
+    <client-to-server>Integer skillId(注释:skillId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1901" name="获取自己队伍信息" order1="SocialRemoting" order2="teamFetchMyTeamInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1902" name="创建队伍" order1="SocialRemoting" order2="teamCreateTeam">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1903" name="创建队伍并邀请队员" order1="SocialRemoting" order2="teamCreateTeamWithRole">
+    <client-to-server>Integer targetRoleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1904" name="邀请队伍" order1="SocialRemoting" order2="teamInviteToTeam">
+    <client-to-server>Integer targetRoleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1905" name="同意加入队伍" order1="SocialRemoting" order2="teamAgreeJoinTeam">
+    <client-to-server>Integer teamId,Integer method,Integer noticeRoleInfor(注释:1=同意 2=拒绝)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1906" name="退出队伍" order1="SocialRemoting" order2="teamLeaveMyTeam">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1907" name="踢出队伍" order1="SocialRemoting" order2="teamKickMember">
+    <client-to-server>Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1908" name="使他成为队长" order1="SocialRemoting" order2="teamCaptainMember">
+    <client-to-server>Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1909" name="解散队伍" order1="SocialRemoting" order2="teamDismissMyTeam">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1910" name="申请加入队伍" order1="SocialRemoting" order2="teamApplyToJoinTeam">
+    <client-to-server>Integer targetCaptainId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1911" order1="SocialRemoting" order2="teamProcessAgreeJoinApply">
+    <client-to-server>Integer roleId,Integer way(注释:way 1=同意 2=不同意)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1912" order1="SocialRemoting" order2="teamNearByTeam">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1913" order1="SocialRemoting" order2="nearByFreePlayer">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1914" order1="SocialRemoting" order2="findPlayer">
+    <client-to-server>String name(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1915" order1="SocialRemoting" order2="addBlock">
+    <client-to-server>Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1916" order1="SocialRemoting" order2="addEnemy">
+    <client-to-server>Integer roleId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1917" order1="SocialRemoting" order2="updateWasNewEnemy">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="1918" order1="SocialRemoting" order2="addFriend">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1919" order1="SocialRemoting" order2="getRoleInfor">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:[0]RoleInforVo)</server-to-client>
+  </command>
+  <command id="1920" order1="SocialRemoting" order2="removeBlock">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1921" order1="SocialRemoting" order2="removeEnemy">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1922" order1="SocialRemoting" order2="fetchRelationList">
+    <client-to-server>Integer relationType(注释:relationType 1:好友； 2：黑名单;3： 仇人；)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="1923" order1="SocialRemoting" order2="removeFriend">
+    <client-to-server>Integer roleId(注释:roleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2001" order1="SoulRemoting" order2="soulPower">
+    <client-to-server>Integer slot(注释:slot)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2002" order1="SoulRemoting" order2="soulExtractLock">
+    <client-to-server>Integer equipSlot,Integer slotIndex(注释:slotIndex)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2003" order1="SoulRemoting" order2="soulExtractUnLock">
+    <client-to-server>Integer equipSlot,Integer slotIndex(注释:slotIndex)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2004" order1="SoulRemoting" order2="soulExtractActive">
+    <client-to-server>Integer equipSlot,Integer slotIndex(注释:slotIndex)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2005" order1="SoulRemoting" order2="soulExtract">
+    <client-to-server>Integer equipSlot, Integer normalORAdvance(注释:normalORAdvance 1:普通 2:高级)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2006" order1="SoulRemoting" order2="oneKeySoulGemInsert">
+    <client-to-server>Integer equipSlot(注释:equipSlot)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2007" order1="SoulRemoting" order2="oneKeySoulGemRemove">
+    <client-to-server>Integer equipSlot(注释:equipSlot)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2008" order1="SoulRemoting" order2="soulGemInsert">
+    <client-to-server>Integer equipSlot,Integer gemIndex,Integer itemId(注释:itemId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2009" order1="SoulRemoting" order2="soulGemRemove">
+    <client-to-server>Integer equipSlot,Integer gemIndex(注释:itemId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2010" order1="SoulRemoting" order2="fetchRoleSoul">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2011" order1="SoulRemoting" order2="randomUpSoul">
+    <client-to-server>Integer num(注释:num 次数)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2012" order1="SoulRemoting" order2="resetSoul">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2013" order1="SoulRemoting" order2="backSoul">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2014" order1="SoulRemoting" order2="exchangeSoul">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2101" order1="TaskRemoting" order2="taskAccept">
+    <client-to-server>Integer taskId(注释:taskId)</client-to-server>
+    <server-to-client>Object(注释:任务列表)</server-to-client>
+  </command>
+  <command id="2102" order1="TaskRemoting" order2="flushYunDartCar">
+    <client-to-server>Integer type(注释:type 1:普通； 2：一键橙车)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2103" order1="TaskRemoting" order2="checkYunDartCarFinishTime">
+    <client-to-server>Integer taskId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2104" order1="TaskRemoting" order2="taskCancel">
+    <client-to-server>Integer taskId(注释:taskId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2105" order1="TaskRemoting" order2="taskSubmit">
+    <client-to-server>Integer taskId(注释:taskId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2106" order1="TaskRemoting" order2="taskRingSubmit">
+    <client-to-server>Integer awardType(注释:awardType 普通=1)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2107" order1="TaskRemoting" order2="taskRingQualityUp">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2108" order1="TaskRemoting" order2="taskRingAllFinish">
+    <client-to-server>Integer taskId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2109" order1="TaskRemoting" order2="achieveFinish">
+    <client-to-server>Integer taskId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2110" order1="TaskRemoting" order2="cheatAddTaskFinish">
+    <client-to-server>Integer taskId,Integer count(注释:count)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2111" name="打开任务活跃度面板" order1="TaskRemoting" order2="openLivelyTaskPanel">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="2112" order1="TaskRemoting" order2="openAhievePanel">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="2113" order1="TaskRemoting" order2="updateTaskState">
+    <client-to-server>Integer taskId(注释:taskId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2114" order1="TaskRemoting" order2="fansTask">
+    <client-to-server>Integer taskId(注释:taskId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2201" name="打开协作界面" order1="TeamDungeonRemoting" order2="joinTeamLobby">
+    <client-to-server>Integer copySceneConfPoId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2202" name="离开协作界面，开始接受列表    房间列表" order1="TeamDungeonRemoting" order2="leaveTeamLobby">
+    <client-to-server>Integer copySceneConfPoId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2203" name="创建组队副本" order1="TeamDungeonRemoting" order2="teamCreateTeamDungenon">
+    <client-to-server>Integer copySceneConfPoId, Integer needPower(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2204" name="获取自己队伍信息" order1="TeamDungeonRemoting" order2="teamFetchMyTeamInfor">
+    <client-to-server>Integer copySceneConfPoId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2205" name="加入房间" order1="TeamDungeonRemoting" order2="joinRoom">
+    <client-to-server>Integer teamId, Integer copySceneConfPoId(注释:teamId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2206" name="退出房间" order1="TeamDungeonRemoting" order2="exitRoom">
+    <client-to-server>Integer copySceneConfPoId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2207" order1="TeamDungeonRemoting" order2="captainKickingPlayerExitRoom">
+    <client-to-server>Integer targetRoleId,Integer copySceneConfPoId(注释:targetRoleId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2208" name="改变组队准备状态" order1="TeamDungeonRemoting" order2="changeReadyDungeonTeamState">
+    <client-to-server>Integer copySceneConfPoId(注释:teamId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2209" name="使其他人成为队长" order1="TeamDungeonRemoting" order2="teamCaptainMember">
+    <client-to-server>Integer roleId, Integer copySceneConfPoId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2210" order1="TeamDungeonRemoting" order2="openCopySceneActivityLobby">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2211" order1="TeamDungeonRemoting" order2="captainRadio">
+    <client-to-server>Integer copySceneConfPoId(注释:copySceneConfPoId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2301" order1="ThirdPartyRemoting" order2="koreaLoginCheck">
+    <client-to-server>String userId,String token,String cpId, String appId, String channelId, String channelAction, String extInfo(注释:extInfo 检测登录扩展字段，用于适配渠道)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2401" name="生成怪物信息" order1="ToolRemoting" order2="generateSceneMonsterInfor">
+    <client-to-server>String xmlStriing,Integer sceneId(注释:xmlStriing)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2501" order1="UserRemoting" order2="createAndCheckUserAccount">
+    <client-to-server>String iuid,String password,String channleKey,String deviceId,Integer serverId(注释:pass 密码)</client-to-server>
+    <server-to-client>Object(注释:[0]1)</server-to-client>
+  </command>
+  <command id="2502" order1="UserRemoting" order2="createAndCheckUserAccountLoginQueue">
+    <client-to-server>String iuid,String password,String channleKey,String deviceId,Integer serverId, Integer wasEnter, String idfa(注释:wasEnter)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2503" order1="UserRemoting" order2="createAndCheckUserAccountLoginQueue2">
+    <client-to-server>String iuid,String password,String channleKey,String deviceId,Integer serverId, Integer wasEnter, String idfa, String packageName(注释:packageName)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2504" order1="UserRemoting" order2="createAndCheckUserAccountLoginLoginQueueAfter">
+    <client-to-server>String iuid,String password,String channleKey,String deviceId,Integer serverId(注释:serverId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2505" order1="UserRemoting" order2="fetchUserAccount">
+    <client-to-server>String iuid,String password,Integer serverId(注释:password)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2506" order1="UserRemoting" order2="createAndCheckUserAccountLoginQueueToken">
+    <client-to-server>String token,String channleKey,String deviceId,Integer serverId, Integer wasEnter, String idfa, String packageName(注释:packageName)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2507" order1="UserRemoting" order2="createAndCheckUserAccountLoginLoginQueueAfterToken">
+    <client-to-server>String token,String channleKey,String deviceId,Integer serverId(注释:serverId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2601" order1="VentureRemoting" order2="arenaFirstInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2602" name="获得竞技场信息，打开面板第一个接口" order1="VentureRemoting" order2="arenaFetchInfor">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2603" name="刷新竞技场信息" order1="VentureRemoting" order2="arenaFresh">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2604" name="挑战竞技场某人" order1="VentureRemoting" order2="arenaChallenge">
+    <client-to-server>Integer targetRoleId(注释:rankPos 挑战排位)</client-to-server>
+    <server-to-client>Object(注释:[0]列表)</server-to-client>
+  </command>
+  <command id="2605" name="进入活动副本" order1="VentureRemoting" order2="activityCopySceneStart">
+    <client-to-server>Integer copySceneConfPoId(注释:copySceneConfigId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2606" name="进入公会副本" order1="VentureRemoting" order2="guildCopySceneStart">
+    <client-to-server>Integer copySceneConfPoId(注释:copySceneConfigId)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2607" name="进入副本" order1="VentureRemoting" order2="copySceneStart">
+    <client-to-server>Integer copySceneConfigId(注释:teamOrNot)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2608" order1="VentureRemoting" order2="copySceneEnd">
+    <client-to-server>Integer result(注释:1=win 0=lose)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2609" order1="VentureRemoting" order2="towerChallengeStart">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2610" order1="VentureRemoting" order2="towerEndAdjustCurrentLv">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2611" order1="VentureRemoting" order2="towerChallengeEnd">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2612" order1="VentureRemoting" order2="towerWipeout">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2613" order1="VentureRemoting" order2="fetchDotaRank">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2614" name="同意加入房间" order1="VentureRemoting" order2="teamAcceptEnterRoom">
+    <client-to-server>Integer agree(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2615" order1="VentureRemoting" order2="fetchWorldBossInfors">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2616" order1="VentureRemoting" order2="fetchBossSecertInfors">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2617" order1="VentureRemoting" order2="copyInspire">
+    <client-to-server>Integer gold(注释:gold)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2618" order1="VentureRemoting" order2="fetchHistoryRecord">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2619" order1="VentureRemoting" order2="takeBattleResultAward">
+    <client-to-server>Integer option, Integer copySceneConfPoId(注释:null)</client-to-server>
+    <server-to-client>Object(注释:turn)</server-to-client>
+  </command>
+  <command id="2620" order1="VentureRemoting" order2="fetchFringeRemainingTime">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+  <command id="2621" order1="VentureRemoting" order2="fetchTimerBossInfo">
+    <client-to-server>(注释:null)</client-to-server>
+    <server-to-client>Object(注释:null)</server-to-client>
+  </command>
+</Protocal>

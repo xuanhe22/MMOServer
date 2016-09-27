@@ -1,0 +1,894 @@
+<constantFile>
+	<global>
+		<careerItems>
+			<!-- 替换的虚拟道具 道具编号 对应 战士 弓手 法师 -道具编号-->
+			<replaceItem itemId="101" replaceItems="310100001|320100001|330100001"/>
+			<replaceItem itemId="102" replaceItems="310500001|320500001|330500001"/>
+			<replaceItem itemId="103" replaceItems="300006001|300006001|300006011"/>
+			<replaceItem itemId="104" replaceItems="310100016|320100016|330100016"/>
+			<replaceItem itemId="105" replaceItems="310300003|320300003|330300003"/>
+			<replaceItem itemId="106" replaceItems="310600001|320600001|330600001"/>
+			<replaceItem itemId="107" replaceItems="311000003|321000003|331000003"/>
+			<replaceItem itemId="108" replaceItems="310100015|320100015|330100015"/>
+			<replaceItem itemId="109" replaceItems="300006004|300006004|300006014"/>
+			<replaceItem itemId="110" replaceItems="310500015|320500015|330500015"/>
+			<replaceItem itemId="111" replaceItems="310100003|320100003|330100003"/>		
+		</careerItems>
+	</global>
+	
+	<!-- 日常任务-->
+	<ringTask ring10Award="300004003|20000,300004017|50,300004016|1" onkeyStarCost="10000" onkeyFinishOneRingCost="15" doubleExpCost="10">
+	</ringTask>
+	
+	<!-- 背包开启-->
+	<openPackage>
+		<consum min="1"  max="1" num="50" />
+		<consum min="2"  max="2" num="100" />
+		<consum min="3"  max="3" num="150" />
+		<consum min="4"  max="4" num="200" />
+		<consum min="5"  max="5" num="250" />
+		<consum min="6"  max="6" num="300" />
+		<consum min="7"  max="7" num="350" />
+		<consum min="8"  max="8" num="400" />
+		<consum min="9"  max="9" num="450" />
+		<consum min="10"  max="10" num="500" />
+		<consum min="11"  max="11" num="550" />
+		<consum min="12"  max="12" num="600" />
+		<consum min="13"  max="13" num="650" />
+		<consum min="14"  max="14" num="700" />
+		<consum min="15"  max="15" num="750" />
+		<consum min="16"  max="16" num="800" />
+		<consum min="17"  max="17" num="850" />
+		<consum min="18"  max="18" num="900" />
+		<consum min="19"  max="19" num="950" />
+		<consum min="20"  max="100000" num="1000" />
+	</openPackage>
+	
+	<!-- 通天塔-->
+	<dota>
+		<layer lv="1" suggestPower="3500" monsterLv="21" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|500|1" script="1" exp="2000" firstAwardExp=""/>
+		<layer lv="2" suggestPower="3700" monsterLv="22" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|500|1" script="1" exp="2000" firstAwardExp=""/>
+		<layer lv="3" suggestPower="3900" monsterLv="23" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|500|1" script="1" exp="2000" firstAwardExp=""/>
+		<layer lv="4" suggestPower="4200" monsterLv="24" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|500|1" script="1" exp="2000" firstAwardExp=""/>
+		<layer lv="5" suggestPower="4400" monsterLv="25" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1,5016|10000|1" script="1" exp="10000" firstAwardExp="300099005|4"/>
+		<layer lv="6" suggestPower="4900" monsterLv="26" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|600|1" script="1" exp="2400" firstAwardExp=""/>
+		<layer lv="7" suggestPower="5100" monsterLv="27" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|600|1" script="1" exp="2400" firstAwardExp=""/>
+		<layer lv="8" suggestPower="5400" monsterLv="28" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|600|1" script="1" exp="2400" firstAwardExp=""/>
+		<layer lv="9" suggestPower="5700" monsterLv="29" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|600|1" script="1" exp="2400" firstAwardExp=""/>
+		<layer lv="10" suggestPower="5900" monsterLv="30" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1,5016|10000|1" script="1" exp="10000" firstAwardExp="300099005|6,300099006|5"/>
+		<layer lv="11" suggestPower="7200" monsterLv="31" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|700|1" script="1" exp="2800" firstAwardExp=""/>
+		<layer lv="12" suggestPower="8700" monsterLv="32" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|700|1" script="1" exp="2800" firstAwardExp=""/>
+		<layer lv="13" suggestPower="10400" monsterLv="33" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|700|1" script="1" exp="2800" firstAwardExp=""/>
+		<layer lv="14" suggestPower="12300" monsterLv="34" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|700|1" script="1" exp="2800" firstAwardExp=""/>
+		<layer lv="15" suggestPower="13300" monsterLv="35" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|8"/>
+		<layer lv="16" suggestPower="14400" monsterLv="36" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|800|1" script="1" exp="3200" firstAwardExp=""/>
+		<layer lv="17" suggestPower="15600" monsterLv="37" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|800|1" script="1" exp="3200" firstAwardExp=""/>
+		<layer lv="18" suggestPower="16800" monsterLv="38" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|800|1" script="1" exp="3200" firstAwardExp=""/>
+		<layer lv="19" suggestPower="18100" monsterLv="39" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|800|1" script="1" exp="3200" firstAwardExp=""/>
+		<layer lv="20" suggestPower="19500" monsterLv="40" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|10,300099006|10"/>
+		<layer lv="21" suggestPower="20900" monsterLv="41" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|900|1" script="1" exp="3600" firstAwardExp=""/>
+		<layer lv="22" suggestPower="22500" monsterLv="42" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|900|1" script="1" exp="3600" firstAwardExp=""/>
+		<layer lv="23" suggestPower="24100" monsterLv="43" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|900|1" script="1" exp="3600" firstAwardExp=""/>
+		<layer lv="24" suggestPower="25700" monsterLv="44" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|900|1" script="1" exp="3600" firstAwardExp=""/>
+		<layer lv="25" suggestPower="27500" monsterLv="45" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|12"/>
+		<layer lv="26" suggestPower="29300" monsterLv="46" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="27" suggestPower="31300" monsterLv="47" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="28" suggestPower="33300" monsterLv="48" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="29" suggestPower="35400" monsterLv="49" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="30" suggestPower="37600" monsterLv="50" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|14,300099006|15"/>
+		<layer lv="31" suggestPower="39900" monsterLv="51" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="32" suggestPower="42200" monsterLv="52" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="33" suggestPower="44700" monsterLv="53" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="34" suggestPower="47300" monsterLv="54" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1000|1" script="1" exp="4000" firstAwardExp=""/>
+		<layer lv="35" suggestPower="50000" monsterLv="55" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|16"/>
+		<layer lv="36" suggestPower="52700" monsterLv="56" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="37" suggestPower="55600" monsterLv="57" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="38" suggestPower="58600" monsterLv="58" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="39" suggestPower="61700" monsterLv="59" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="40" suggestPower="65000" monsterLv="60" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|18,300099006|20"/>
+		<layer lv="41" suggestPower="68200" monsterLv="61" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="42" suggestPower="71700" monsterLv="62" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="43" suggestPower="75200" monsterLv="63" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="44" suggestPower="78900" monsterLv="64" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1100|1" script="1" exp="4400" firstAwardExp=""/>
+		<layer lv="45" suggestPower="82700" monsterLv="65" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|20"/>
+		<layer lv="46" suggestPower="86600" monsterLv="66" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1200|1" script="1" exp="4800" firstAwardExp=""/>
+		<layer lv="47" suggestPower="90600" monsterLv="67" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1200|1" script="1" exp="4800" firstAwardExp=""/>
+		<layer lv="48" suggestPower="94800" monsterLv="68" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1200|1" script="1" exp="4800" firstAwardExp=""/>
+		<layer lv="49" suggestPower="99100" monsterLv="69" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1200|1" script="1" exp="4800" firstAwardExp=""/>
+		<layer lv="50" suggestPower="103600" monsterLv="70" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|22,300099006|25"/>
+		<layer lv="51" suggestPower="108100" monsterLv="71" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="52" suggestPower="112700" monsterLv="72" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="53" suggestPower="117600" monsterLv="73" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="54" suggestPower="122500" monsterLv="74" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="55" suggestPower="127700" monsterLv="75" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|24"/>
+		<layer lv="56" suggestPower="132900" monsterLv="76" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="57" suggestPower="138300" monsterLv="77" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="58" suggestPower="143800" monsterLv="78" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="59" suggestPower="149500" monsterLv="79" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1300|1" script="1" exp="5200" firstAwardExp=""/>
+		<layer lv="60" suggestPower="155400" monsterLv="80" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|26,300099006|30"/>
+		<layer lv="61" suggestPower="161400" monsterLv="81" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="62" suggestPower="167500" monsterLv="82" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="63" suggestPower="173800" monsterLv="83" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="64" suggestPower="180300" monsterLv="84" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="65" suggestPower="187000" monsterLv="85" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|28"/>
+		<layer lv="66" suggestPower="193700" monsterLv="86" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="67" suggestPower="200600" monsterLv="87" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="68" suggestPower="207800" monsterLv="88" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="69" suggestPower="215000" monsterLv="89" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1400|1" script="1" exp="5600" firstAwardExp=""/>
+		<layer lv="70" suggestPower="222600" monsterLv="90" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|30,300099006|35"/>
+		<layer lv="71" suggestPower="230100" monsterLv="91" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1500|1" script="1" exp="6000" firstAwardExp=""/>
+		<layer lv="72" suggestPower="237900" monsterLv="92" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1500|1" script="1" exp="6000" firstAwardExp=""/>
+		<layer lv="73" suggestPower="245900" monsterLv="93" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1500|1" script="1" exp="6000" firstAwardExp=""/>
+		<layer lv="74" suggestPower="254100" monsterLv="94" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1500|1" script="1" exp="6000" firstAwardExp=""/>
+		<layer lv="75" suggestPower="262500" monsterLv="95" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|32"/>
+		<layer lv="76" suggestPower="270900" monsterLv="96" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="77" suggestPower="279600" monsterLv="97" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="78" suggestPower="288500" monsterLv="98" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="79" suggestPower="297600" monsterLv="99" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="80" suggestPower="307000" monsterLv="100" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|34,300099006|40"/>
+		<layer lv="81" suggestPower="316400" monsterLv="101" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="82" suggestPower="326000" monsterLv="102" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="83" suggestPower="335900" monsterLv="103" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="84" suggestPower="345900" monsterLv="104" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1600|1" script="1" exp="6400" firstAwardExp=""/>
+		<layer lv="85" suggestPower="356300" monsterLv="105" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|36"/>
+		<layer lv="86" suggestPower="366700" monsterLv="106" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="87" suggestPower="377300" monsterLv="107" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="88" suggestPower="388200" monsterLv="108" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="89" suggestPower="399300" monsterLv="109" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="90" suggestPower="410700" monsterLv="110" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|38,300099006|45"/>
+		<layer lv="91" suggestPower="422100" monsterLv="111" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="92" suggestPower="433800" monsterLv="112" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="93" suggestPower="445700" monsterLv="113" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="94" suggestPower="457900" monsterLv="114" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1700|1" script="1" exp="6800" firstAwardExp=""/>
+		<layer lv="95" suggestPower="470400" monsterLv="115" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|40"/>
+		<layer lv="96" suggestPower="482800" monsterLv="116" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1800|1" script="1" exp="7200" firstAwardExp=""/>
+		<layer lv="97" suggestPower="495700" monsterLv="117" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1800|1" script="1" exp="7200" firstAwardExp=""/>
+		<layer lv="98" suggestPower="508700" monsterLv="118" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1800|1" script="1" exp="7200" firstAwardExp=""/>
+		<layer lv="99" suggestPower="522000" monsterLv="119" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|1800|1" script="1" exp="7200" firstAwardExp=""/>
+		<layer lv="100" suggestPower="606600" monsterLv="120" showAwardItems="300099006|1,300099005|1,300004001|1" dropExp="2005|10000|1" script="1" exp="10000" firstAwardExp="300099005|42,300099006|50"/>
+	</dota>
+	
+	<!--强化 -->
+	<equipPower>
+		<power lv="1" lowerRate="80" middleRate="90" highRate="100" value="2"/>
+		<power lv="2" lowerRate="70" middleRate="80" highRate="90" value="4"/>
+		<power lv="3" lowerRate="60" middleRate="70" highRate="80" value="6"/>
+		<power lv="4" lowerRate="50" middleRate="60" highRate="70" value="9"/>
+		<power lv="5" lowerRate="40" middleRate="50" highRate="60" value="12"/>
+		<power lv="6" lowerRate="30" middleRate="45" highRate="50" value="15"/>
+		<power lv="7" lowerRate="10" middleRate="20" highRate="40" value="19"/>
+		<power lv="8" lowerRate="10" middleRate="19" highRate="38" value="23"/>
+		<power lv="9" lowerRate="9" middleRate="18" highRate="36" value="27"/>
+		<power lv="10" lowerRate="9" middleRate="17" highRate="34" value="32"/>
+		<power lv="11" lowerRate="8" middleRate="16" highRate="32" value="37"/>
+		<power lv="12" lowerRate="8" middleRate="15" highRate="30" value="42"/>
+		<power lv="13" lowerRate="7" middleRate="14" highRate="28" value="48"/>
+		<power lv="14" lowerRate="7" middleRate="13" highRate="26" value="54"/>
+		<power lv="15" lowerRate="6" middleRate="12" highRate="24" value="60"/>
+		<power lv="16" lowerRate="6" middleRate="11" highRate="22" value="68"/>
+		<power lv="17" lowerRate="5" middleRate="10" highRate="20" value="76"/>
+		<power lv="18" lowerRate="5" middleRate="9" highRate="18" value="84"/>
+		<power lv="19" lowerRate="4" middleRate="8" highRate="16" value="94"/>
+		<power lv="20" lowerRate="4" middleRate="7" highRate="14" value="104"/>
+	</equipPower>
+	<!-- 公会 -->
+	<guild>
+		<!-- 创建公会条件 -->
+		<establish lv="30" gold="100000" diamond="0" item="" num="30|35|40|45|50|55|60|65|70|75"/>
+		<!-- 公会捐献,道具编号|需要战功 -->
+		<contribute items="300005001|20,300005002|20,300005003|20,300005004|20"/>
+		<!-- 公会波塞海王奖励 -->
+		<poseidonAward award="300004003|20000,300004021|2000,300004046|2000,300004009|1"/>
+		<!-- 公会祭祀刷新 -->
+		<priestFresh freeTimes="3" cost="2000">
+			<freshQuality id="1" name="白色祭祀" expPar="100" needGuildLv="1" freeWeight="500"  weight="100" />
+			<freshQuality id="2" name="绿色祭祀" expPar="120" needGuildLv="1" freeWeight="100"  weight="100" />
+			<freshQuality id="3" name="蓝色祭祀" expPar="140" needGuildLv="1" freeWeight="50"  weight="50" />
+			<freshQuality id="4" name="紫色祭祀" expPar="170" needGuildLv="4" freeWeight="5"  weight="15" />
+			<freshQuality id="5" name="橙色祭祀" expPar="200" needGuildLv="7" freeWeight="0"  weight="4" />
+		</priestFresh>
+		<!-- 公会兑换,道具编号|需要商店等级|可买数量|需要战功 -->
+		<exchange items="300001001|1|10|40,300001002|2|5|160,300001004|2|5|200,300001007|3|5|200,300099005|3|5|200,300099006|4|5|400"/>
+		<!-- 公会职务 1：会长； 2：副会长； 3：长老;  4：会员-->
+		<positions>
+			<position  post="1"  allow="1" dismiss="1" upgrade="1" notice="1" addMember="1" removeMember="1" exit="0" auto="1"/>
+			<position  post="2"  allow="2" dismiss="0" upgrade="1" notice="1" addMember="1" removeMember="1" exit="1" auto="0"/>
+			<position  post="3"  allow="5" dismiss="0" upgrade="0" notice="1" addMember="1" removeMember="1" exit="1" auto="0"/>
+			<position  post="4"  allow="50" dismiss="0" upgrade="0" notice="0" addMember="0" removeMember="0" exit="1" auto="0"/>
+		</positions>
+		
+		<!-- 公会建筑 -->
+		<buildings>
+			<!-- 触发技能ID,技能消耗战功 -->
+			<building id="1" name="公會圖騰">
+				<!-- 升级需要金币 需要消耗道具列表-->
+				<upgrade lv="1" costGold="17500" itemList="300005001|150,300005002|150,300005003|150,300005004|150" skillId="160001" skillCostHonor="500" />
+				<upgrade lv="2" costGold="52500" itemList="300005001|450,300005002|450,300005003|450,300005004|450" skillId="160002" skillCostHonor="500" />
+				<upgrade lv="3" costGold="87500" itemList="300005001|750,300005002|750,300005003|750,300005004|750" skillId="160003" skillCostHonor="500" />
+				<upgrade lv="4" costGold="122500" itemList="300005001|1125,300005002|1125,300005003|1125,300005004|1125" skillId="160004" skillCostHonor="500" />
+				<upgrade lv="5" costGold="175000" itemList="300005001|1500,300005002|1500,300005003|1500,300005004|1500" skillId="160005" skillCostHonor="500" />
+				<upgrade lv="6" costGold="262500" itemList="300005001|2250,300005002|2250,300005003|2250,300005004|2250" skillId="160006" skillCostHonor="500" />
+				<upgrade lv="7" costGold="350000" itemList="300005001|3000,300005002|3000,300005003|3000,300005004|3000" skillId="160007" skillCostHonor="500" />
+				<upgrade lv="8" costGold="525000" itemList="300005001|4500,300005002|4500,300005003|4500,300005004|4500" skillId="160008" skillCostHonor="500" />
+				<upgrade lv="9" costGold="700000" itemList="300005001|6000,300005002|6000,300005003|6000,300005004|6000" skillId="160009" skillCostHonor="500" />
+				<upgrade lv="10" costGold="99900000" itemList="300005001|6000,300005002|6000,300005003|6000,300005004|6000" skillId="160010" skillCostHonor="500" />
+			</building>
+			<building id="2" name="公會祭壇">
+				<!-- 升级需要金币 需要消耗道具列表-->
+				<upgrade lv="1" costGold="5800" itemList="300005001|50,300005002|50,300005003|50,300005004|50" skillId="160011" skillCostHonor="500" />
+				<upgrade lv="2" costGold="17500" itemList="300005001|150,300005002|150,300005003|150,300005004|150" skillId="160012" skillCostHonor="500" />
+				<upgrade lv="3" costGold="29200" itemList="300005001|250,300005002|250,300005003|250,300005004|250" skillId="160013" skillCostHonor="500" />
+				<upgrade lv="4" costGold="40800" itemList="300005001|375,300005002|375,300005003|375,300005004|375" skillId="160014" skillCostHonor="500" />
+				<upgrade lv="5" costGold="58300" itemList="300005001|500,300005002|500,300005003|500,300005004|500" skillId="160015" skillCostHonor="500" />
+				<upgrade lv="6" costGold="87500" itemList="300005001|750,300005002|750,300005003|750,300005004|750" skillId="160016" skillCostHonor="500" />
+				<upgrade lv="7" costGold="116700" itemList="300005001|1000,300005002|1000,300005003|1000,300005004|1000" skillId="160017" skillCostHonor="500" />
+				<upgrade lv="8" costGold="175000" itemList="300005001|1500,300005002|1500,300005003|1500,300005004|1500" skillId="160018" skillCostHonor="500" />
+				<upgrade lv="9" costGold="233300" itemList="300005001|2000,300005002|2000,300005003|2000,300005004|2000" skillId="160019" skillCostHonor="500" />
+				<upgrade lv="10" costGold="99900000" itemList="300005001|6000,300005002|6000,300005003|6000,300005004|6000" skillId="160020" skillCostHonor="500" />
+			</building>
+				<building id="3" name="公會工坊">
+				<!-- 升级需要金币 需要消耗道具列表-->
+				<upgrade lv="1" costGold="5800" itemList="300005001|50,300005002|50,300005003|50,300005004|50" skillId="160021" skillCostHonor="500" />
+				<upgrade lv="2" costGold="17500" itemList="300005001|150,300005002|150,300005003|150,300005004|150" skillId="160022" skillCostHonor="500" />
+				<upgrade lv="3" costGold="29200" itemList="300005001|250,300005002|250,300005003|250,300005004|250" skillId="160023" skillCostHonor="500" />
+				<upgrade lv="4" costGold="40800" itemList="300005001|375,300005002|375,300005003|375,300005004|375" skillId="160024" skillCostHonor="500" />
+				<upgrade lv="5" costGold="58300" itemList="300005001|500,300005002|500,300005003|500,300005004|500" skillId="160025" skillCostHonor="500" />
+				<upgrade lv="6" costGold="87500" itemList="300005001|750,300005002|750,300005003|750,300005004|750" skillId="160026" skillCostHonor="500" />
+				<upgrade lv="7" costGold="116700" itemList="300005001|1000,300005002|1000,300005003|1000,300005004|1000" skillId="160027" skillCostHonor="500" />
+				<upgrade lv="8" costGold="175000" itemList="300005001|1500,300005002|1500,300005003|1500,300005004|1500" skillId="160028" skillCostHonor="500" />
+				<upgrade lv="9" costGold="233300" itemList="300005001|2000,300005002|2000,300005003|2000,300005004|2000" skillId="160029" skillCostHonor="500" />
+				<upgrade lv="10" costGold="99900000" itemList="300005001|6000,300005002|6000,300005003|6000,300005004|6000" skillId="160030" skillCostHonor="500" />
+			</building>
+				<building id="4" name="公會學院">
+				<!-- 升级需要金币 需要消耗道具列表-->
+				<upgrade lv="1" costGold="5800" itemList="300005001|50,300005002|50,300005003|50,300005004|50" skillId="160031" skillCostHonor="500" />
+				<upgrade lv="2" costGold="17500" itemList="300005001|150,300005002|150,300005003|150,300005004|150" skillId="160032" skillCostHonor="500" />
+				<upgrade lv="3" costGold="29200" itemList="300005001|250,300005002|250,300005003|250,300005004|250" skillId="160033" skillCostHonor="500" />
+				<upgrade lv="4" costGold="40800" itemList="300005001|375,300005002|375,300005003|375,300005004|375" skillId="160034" skillCostHonor="500" />
+				<upgrade lv="5" costGold="58300" itemList="300005001|500,300005002|500,300005003|500,300005004|500" skillId="160035" skillCostHonor="500" />
+				<upgrade lv="6" costGold="87500" itemList="300005001|750,300005002|750,300005003|750,300005004|750" skillId="160036" skillCostHonor="500" />
+				<upgrade lv="7" costGold="116700" itemList="300005001|1000,300005002|1000,300005003|1000,300005004|1000" skillId="160037" skillCostHonor="500" />
+				<upgrade lv="8" costGold="175000" itemList="300005001|1500,300005002|1500,300005003|1500,300005004|1500" skillId="160038" skillCostHonor="500" />
+				<upgrade lv="9" costGold="233300" itemList="300005001|2000,300005002|2000,300005003|2000,300005004|2000" skillId="160039" skillCostHonor="500" />
+				<upgrade lv="10" costGold="99900000" itemList="300005001|6000,300005002|6000,300005003|6000,300005004|6000" skillId="160040" skillCostHonor="500" />
+			</building>
+		</buildings>
+		<maintiance>
+			<cost lv="1" gold="10000"/>
+			<cost lv="2" gold="15000"/>
+			<cost lv="3" gold="20000"/>
+			<cost lv="4" gold="25000"/>
+			<cost lv="5" gold="30000"/>
+			<cost lv="6" gold="35000"/>
+			<cost lv="7" gold="40000"/>
+			<cost lv="8" gold="45000"/>
+			<cost lv="9" gold="50000"/>
+			<cost lv="10" gold="55000"/>
+		</maintiance>
+		<!-- 公会boss相关-->
+		<guildboss>
+			<boss lv="1" bossid="510299001" award="300004002|20000,300004021|1000,300004008|1" copysceneconfid="20206032"/>
+			<boss lv="2" bossid="510299002" award="300004002|25000,300004021|1000,300004008|1" copysceneconfid="20206033"/>
+			<boss lv="3" bossid="510299003" award="300004002|30000,300004021|1000,300004008|1" copysceneconfid="20206034"/>
+			<boss lv="4" bossid="510299004" award="300004002|35000,300004021|1000,300004008|1" copysceneconfid="20206035"/>
+			<boss lv="5" bossid="510299005" award="300004002|40000,300004021|1000,300004008|1" copysceneconfid="20206036"/>
+			<boss lv="6" bossid="510299006" award="300004002|45000,300004021|1000,300004008|1" copysceneconfid="20206037"/>
+			<boss lv="7" bossid="510299007" award="300004002|50000,300004021|1000,300004008|1" copysceneconfid="20206038"/>
+		</guildboss>
+		<!-- 公会领地战相关-->
+		<guildwar>
+			<territory sceneid="20101004" award="300004007|1,300004021|500,300004046|500,300004002|20000" battleStartTime="0 5,15,25,35,45 * * * ?" battleEndTime="0 12,22,32,42,52 * * * ?" competitiveStartTime = "" competitiveEndTime = ""/>
+			<territory sceneid="20101005" award="300004007|1,300004021|500,300004046|500,300004002|20000" battleStartTime="0 5,15,25,35,45 * * * ?" battleEndTime="0 12,22,32,42,52 * * * ?" competitiveStartTime = "" competitiveEndTime = ""/>
+			<territory sceneid="20101008" award="300004007|1,300004021|500,300004046|500,300004002|20000" battleStartTime="0 5,15,25,35,45 * * * ?" battleEndTime="0 12,22,32,42,52 * * * ?" competitiveStartTime = "" competitiveEndTime = ""/>
+			<territory sceneid="20101009" award="300004007|1,300004021|500,300004046|500,300004002|20000" battleStartTime="0 5,15,25,35,45 * * * ?" battleEndTime="0 12,22,32,42,52 * * * ?" competitiveStartTime = "" competitiveEndTime = ""/>
+			<territory sceneid="20101010" award="300004007|1,300004021|500,300004046|500,300004002|20000" battleStartTime="0 0 15 * * ?" battleEndTime="0 20 15 * * ?" competitiveStartTime = "" competitiveEndTime = ""/>
+			<territory sceneid="20101007" award="300004016|1,300004021|1000,300004046|1000,300004002|40000" battleStartTime="0 0 20 ? * SAT" battleEndTime="0 0 21 ? * SAT" competitiveStartTime = "0 0 22 ? * SAT" competitiveEndTime = "0 0 18 ? * SAT"/>
+		</guildwar>
+		
+	</guild>
+	<!-- 翅膀星级消耗道具编号 翅膀阶数消耗道具编号 -->
+	<wing starUpgradeCostItemId="300099005" stepUpgradeCostItemId="300099006">
+		<wingLooks>
+			<wingLook step="1" icon="923001|923001|923001" name="聖潔之翼|聖潔之翼|聖潔之翼" model="913001|913001|913001" />
+			<wingLook step="2" icon="913002|923002|923002" name="孔雀之翼|光明之翼|光明之翼" model="913002|923002|923002" />
+			<wingLook step="3" icon="913003|923003|923003" name="黑鷹之翼|天賜之翼|天賜之翼" model="913003|923003|923003" />
+			<wingLook step="4" icon="913004|923004|923004" name="血色之翼|琉璃之翼|琉璃之翼" model="913004|923004|923004" />
+			<wingLook step="5" icon="913005|923005|923005" name="魔魂之翼|神聖之翼|神聖之翼" model="913005|923005|923005" />
+			<wingLook step="6" icon="913006|923006|923006" name="墮落之翼|幻靈之翼|幻靈之翼" model="913006|923006|923006" />
+			<wingLook step="7" icon="913007|923007|923007" name="夜影之翼|光輝之翼|光輝之翼" model="913007|923007|923007" />
+			<wingLook step="8" icon="913008|923008|923008" name="魔王之翼|天使之翼|天使之翼" model="913008|923008|923008" />
+			<wingLook step="9" icon="913009|923009|923009" name="裁決之翼|制裁之翼|制裁之翼" model="913009|923009|923009" />
+			<wingLook step="10" icon="913010|923010|923010" name="魔龍之翼|熾天使之翼|熾天使之翼" model="913010|923010|923010" />
+		</wingLooks>
+		<stars>
+			<!-- 当前星级 星级道具消耗数量 阶数道具消耗数量 星级属性附加 翅膀名字 -->
+			<star name="1階翅膀0星" lv="0" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|158,6|292,9|158,10|292,7|79,8|146,11|79,12|146,13|2700,14|500,21|28,22|28,23|28,24|28" starExp="100" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀1星" lv="1" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|210,6|390,9|210,10|390,7|105,8|195,11|105,12|195,13|3600,14|500,21|38,22|38,23|38,24|38" starExp="120" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀2星" lv="2" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|249,6|463,9|249,10|463,7|125,8|231,11|125,12|231,13|4272,14|500,21|44,22|44,23|44,24|44" starExp="140" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀3星" lv="3" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|288,6|536,9|288,10|536,7|144,8|268,11|144,12|268,13|4944,14|500,21|52,22|52,23|52,24|52" starExp="160" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀4星" lv="4" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|328,6|608,9|328,10|608,7|164,8|304,11|164,12|304,13|5616,14|500,21|58,22|58,23|58,24|58" starExp="180" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀5星" lv="5" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|367,6|681,9|367,10|681,7|183,8|341,11|183,12|341,13|6288,14|500,21|66,22|66,23|66,24|66" starExp="200" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀6星" lv="6" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|406,6|754,9|406,10|754,7|203,8|377,11|203,12|377,13|6960,14|500,21|72,22|72,23|72,24|72" starExp="220" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀7星" lv="7" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|445,6|827,9|445,10|827,7|223,8|413,11|223,12|413,13|7632,14|500,21|80,22|80,23|80,24|80" starExp="240" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀8星" lv="8" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|484,6|900,9|484,10|900,7|242,8|450,11|242,12|450,13|8304,14|500,21|86,22|86,23|86,24|86" starExp="260" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀9星" lv="9" starUpgradeCostItemCount="1" stepUpgradeCostItemCount="0" batExp="5|524,6|972,9|524,10|972,7|262,8|486,11|262,12|486,13|8976,14|500,21|94,22|94,23|94,24|94" starExp="280" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="1階翅膀10星" lv="10" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="1" batExp="5|563,6|1045,9|563,10|1045,7|281,8|523,11|281,12|523,13|9648,14|500,21|100,22|100,23|100,24|100" starExp="0" stepMinExp="3000" stepMaxExp="10000" stepFailExp="300"/>
+			<star name="2階翅膀0星" lv="11" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|729,6|1353,9|729,10|1353,7|364,8|677,11|364,12|677,13|12492,14|500,21|130,22|130,23|130,24|130" starExp="600" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀1星" lv="12" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|808,6|1500,9|808,10|1500,7|404,8|750,11|404,12|750,13|13848,14|500,21|144,22|144,23|144,24|144" starExp="650" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀2星" lv="13" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|886,6|1646,9|886,10|1646,7|443,8|823,11|443,12|823,13|15192,14|500,21|158,22|158,23|158,24|158" starExp="700" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀3星" lv="14" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|965,6|1793,9|965,10|1793,7|483,8|896,11|483,12|896,13|16548,14|500,21|172,22|172,23|172,24|172" starExp="750" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀4星" lv="15" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|1044,6|1938,9|1044,10|1938,7|522,8|969,11|522,12|969,13|17892,14|500,21|186,22|186,23|186,24|186" starExp="800" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀5星" lv="16" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|1123,6|2085,9|1123,10|2085,7|561,8|1043,11|561,12|1043,13|19248,14|500,21|200,22|200,23|200,24|200" starExp="850" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀6星" lv="17" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|1201,6|2231,9|1201,10|2231,7|601,8|1115,11|601,12|1115,13|20592,14|500,21|214,22|214,23|214,24|214" starExp="900" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀7星" lv="18" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|1280,6|2378,9|1280,10|2378,7|640,8|1189,11|640,12|1189,13|21948,14|500,21|229,22|229,23|229,24|229" starExp="950" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀8星" lv="19" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|1359,6|2523,9|1359,10|2523,7|679,8|1262,11|679,12|1262,13|23292,14|500,21|243,22|243,23|243,24|243" starExp="1000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀9星" lv="20" starUpgradeCostItemCount="2" stepUpgradeCostItemCount="0" batExp="5|1438,6|2670,9|1438,10|2670,7|719,8|1335,11|719,12|1335,13|24648,14|500,21|257,22|257,23|257,24|257" starExp="1050" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="2階翅膀10星" lv="21" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="2" batExp="5|1516,6|2816,9|1516,10|2816,7|758,8|1408,11|758,12|1408,13|25992,14|500,21|271,22|271,23|271,24|271" starExp="0" stepMinExp="4000" stepMaxExp="10000" stepFailExp="120"/>
+			<star name="3階翅膀0星" lv="22" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|1850,6|3436,9|1850,10|3436,7|925,8|1718,11|925,12|1718,13|31716,14|500,21|330,22|330,23|330,24|330" starExp="2000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀1星" lv="23" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|1927,6|3579,9|1927,10|3579,7|964,8|1789,11|964,12|1789,13|33036,14|500,21|344,22|344,23|344,24|344" starExp="2200" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀2星" lv="24" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|2018,6|3748,9|2018,10|3748,7|1009,8|1874,11|1009,12|1874,13|34596,14|500,21|360,22|360,23|360,24|360" starExp="2400" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀3星" lv="25" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|2123,6|3943,9|2123,10|3943,7|1062,8|1971,11|1062,12|1971,13|36396,14|500,21|379,22|379,23|379,24|379" starExp="2600" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀4星" lv="26" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|2242,6|4164,9|2242,10|4164,7|1121,8|2082,11|1121,12|2082,13|38436,14|500,21|400,22|400,23|400,24|400" starExp="2800" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀5星" lv="27" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|2375,6|4411,9|2375,10|4411,7|1188,8|2205,11|1188,12|2205,13|40716,14|500,21|424,22|424,23|424,24|424" starExp="3000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀6星" lv="28" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|2522,6|4684,9|2522,10|4684,7|1261,8|2342,11|1261,12|2342,13|43236,14|500,21|450,22|450,23|450,24|450" starExp="3200" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀7星" lv="29" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|2683,6|4983,9|2683,10|4983,7|1342,8|2491,11|1342,12|2491,13|45996,14|500,21|479,22|479,23|479,24|479" starExp="3400" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀8星" lv="30" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|2858,6|5308,9|2858,10|5308,7|1429,8|2654,11|1429,12|2654,13|48996,14|500,21|510,22|510,23|510,24|510" starExp="3600" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀9星" lv="31" starUpgradeCostItemCount="3" stepUpgradeCostItemCount="0" batExp="5|3047,6|5659,9|3047,10|5659,7|1524,8|2829,11|1524,12|2829,13|52236,14|500,21|544,22|544,23|544,24|544" starExp="3800" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="3階翅膀10星" lv="32" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="4" batExp="5|3250,6|6036,9|3250,10|6036,7|1625,8|3018,11|1625,12|3018,13|55716,14|500,21|580,22|580,23|580,24|580" starExp="0" stepMinExp="5000" stepMaxExp="10000" stepFailExp="85"/>
+			<star name="4階翅膀0星" lv="33" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|3874,6|7194,9|3874,10|7194,7|1937,8|3597,11|1937,12|3597,13|66408,14|500,21|692,22|692,23|692,24|692" starExp="4000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀1星" lv="34" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|4091,6|7597,9|4091,10|7597,7|2045,8|3799,11|2045,12|3799,13|70128,14|500,21|730,22|730,23|730,24|730" starExp="4400" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀2星" lv="35" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|4322,6|8026,9|4322,10|8026,7|2161,8|4013,11|2161,12|4013,13|74088,14|500,21|772,22|772,23|772,24|772" starExp="4800" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀3星" lv="36" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|4567,6|8481,9|4567,10|8481,7|2283,8|4241,11|2283,12|4241,13|78288,14|500,21|816,22|816,23|816,24|816" starExp="5200" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀4星" lv="37" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|4826,6|8962,9|4826,10|8962,7|2413,8|4481,11|2413,12|4481,13|82728,14|500,21|862,22|862,23|862,24|862" starExp="5600" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀5星" lv="38" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|5099,6|9469,9|5099,10|9469,7|2549,8|4735,11|2549,12|4735,13|87408,14|500,21|910,22|910,23|910,24|910" starExp="6000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀6星" lv="39" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|5386,6|10002,9|5386,10|10002,7|2693,8|5001,11|2693,12|5001,13|92328,14|500,21|962,22|962,23|962,24|962" starExp="6400" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀7星" lv="40" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|5687,6|10561,9|5687,10|10561,7|2843,8|5281,11|2843,12|5281,13|97488,14|500,21|1016,22|1016,23|1016,24|1016" starExp="6800" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀8星" lv="41" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|6002,6|11146,9|6002,10|11146,7|3001,8|5573,11|3001,12|5573,13|102888,14|500,21|1072,22|1072,23|1072,24|1072" starExp="7200" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀9星" lv="42" starUpgradeCostItemCount="4" stepUpgradeCostItemCount="0" batExp="5|6331,6|11757,9|6331,10|11757,7|3165,8|5879,11|3165,12|5879,13|108528,14|500,21|1130,22|1130,23|1130,24|1130" starExp="7600" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="4階翅膀10星" lv="43" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="6" batExp="5|6674,6|12394,9|6674,10|12394,7|3337,8|6197,11|3337,12|6197,13|114408,14|500,21|1192,22|1192,23|1192,24|1192" starExp="0" stepMinExp="5000" stepMaxExp="10000" stepFailExp="90"/>
+			<star name="5階翅膀0星" lv="44" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|7891,6|14655,9|7891,10|14655,7|3946,8|7327,11|3946,12|7327,13|135276,14|500,21|1409,22|1409,23|1409,24|1409" starExp="8000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀1星" lv="45" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|8248,6|15318,9|8248,10|15318,7|4124,8|7659,11|4124,12|7659,13|141396,14|500,21|1473,22|1473,23|1473,24|1473" starExp="8600" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀2星" lv="46" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|8619,6|16007,9|8619,10|16007,7|4310,8|8003,11|4310,12|8003,13|147756,14|500,21|1539,22|1539,23|1539,24|1539" starExp="9200" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀3星" lv="47" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|9004,6|16722,9|9004,10|16722,7|4502,8|8361,11|4502,12|8361,13|154356,14|500,21|1608,22|1608,23|1608,24|1608" starExp="9800" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀4星" lv="48" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|9403,6|17463,9|9403,10|17463,7|4702,8|8731,11|4702,12|8731,13|161196,14|500,21|1679,22|1679,23|1679,24|1679" starExp="10400" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀5星" lv="49" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|9816,6|18230,9|9816,10|18230,7|4908,8|9115,11|4908,12|9115,13|168276,14|500,21|1753,22|1753,23|1753,24|1753" starExp="11000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀6星" lv="50" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|10243,6|19023,9|10243,10|19023,7|5122,8|9511,11|5122,12|9511,13|175596,14|500,21|1829,22|1829,23|1829,24|1829" starExp="11600" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀7星" lv="51" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|10684,6|19842,9|10684,10|19842,7|5342,8|9921,11|5342,12|9921,13|183156,14|500,21|1908,22|1908,23|1908,24|1908" starExp="12200" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀8星" lv="52" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|11139,6|20687,9|11139,10|20687,7|5570,8|10343,11|5570,12|10343,13|190956,14|500,21|1989,22|1989,23|1989,24|1989" starExp="12800" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀9星" lv="53" starUpgradeCostItemCount="5" stepUpgradeCostItemCount="0" batExp="5|11608,6|21558,9|11608,10|21558,7|5804,8|10779,11|5804,12|10779,13|198996,14|500,21|2073,22|2073,23|2073,24|2073" starExp="13400" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="5階翅膀10星" lv="54" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="8" batExp="5|12091,6|22455,9|12091,10|22455,7|6046,8|11227,11|6046,12|11227,13|207276,14|500,21|2159,22|2159,23|2159,24|2159" starExp="0" stepMinExp="5800" stepMaxExp="10000" stepFailExp="65"/>
+			<star name="6階翅膀0星" lv="55" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|13902,6|25818,9|13902,10|25818,7|6951,8|12909,11|6951,12|12909,13|238320,14|500,21|2482,22|2482,23|2482,24|2482" starExp="18000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀1星" lv="56" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|14399,6|26741,9|14399,10|26741,7|7199,8|13370,11|7199,12|13370,13|246840,14|500,21|2571,22|2571,23|2571,24|2571" starExp="19000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀2星" lv="57" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|14910,6|27690,9|14910,10|27690,7|7455,8|13845,11|7455,12|13845,13|255600,14|500,21|2662,22|2662,23|2662,24|2662" starExp="20000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀3星" lv="58" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|15435,6|28665,9|15435,10|28665,7|7717,8|14332,11|7717,12|14332,13|264600,14|500,21|2756,22|2756,23|2756,24|2756" starExp="21000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀4星" lv="59" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|15974,6|29666,9|15974,10|29666,7|7987,8|14833,11|7987,12|14833,13|273840,14|500,21|2852,22|2852,23|2852,24|2852" starExp="22000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀5星" lv="60" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|16527,6|30693,9|16527,10|30693,7|8264,8|15346,11|8264,12|15346,13|283320,14|500,21|2951,22|2951,23|2951,24|2951" starExp="23000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀6星" lv="61" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|17094,6|31746,9|17094,10|31746,7|8547,8|15873,11|8547,12|15873,13|293040,14|500,21|3052,22|3052,23|3052,24|3052" starExp="24000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀7星" lv="62" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|17675,6|32825,9|17675,10|32825,7|8838,8|16412,11|8838,12|16412,13|303000,14|500,21|3156,22|3156,23|3156,24|3156" starExp="25000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀8星" lv="63" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|18270,6|33930,9|18270,10|33930,7|9135,8|16965,11|9135,12|16965,13|313200,14|500,21|3262,22|3262,23|3262,24|3262" starExp="26000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀9星" lv="64" starUpgradeCostItemCount="6" stepUpgradeCostItemCount="0" batExp="5|18879,6|35061,9|18879,10|35061,7|9440,8|17530,11|9440,12|17530,13|323640,14|500,21|3371,22|3371,23|3371,24|3371" starExp="27000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="6階翅膀10星" lv="65" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="10" batExp="5|19502,6|36218,9|19502,10|36218,7|9751,8|18109,11|9751,12|18109,13|334320,14|500,21|3482,22|3482,23|3482,24|3482" starExp="0" stepMinExp="6200" stepMaxExp="10000" stepFailExp="50"/>
+			<star name="7階翅膀0星" lv="66" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|21906,6|40684,9|21906,10|40684,7|10953,8|20342,11|10953,12|20342,13|375540,14|500,21|3912,22|3912,23|3912,24|3912" starExp="30000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀1星" lv="67" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|22544,6|41866,9|22544,10|41866,7|11272,8|20933,11|11272,12|20933,13|386460,14|500,21|4026,22|4026,23|4026,24|4026" starExp="32000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀2星" lv="68" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|23194,6|43076,9|23194,10|43076,7|11597,8|21538,11|11597,12|21538,13|397620,14|500,21|4142,22|4142,23|4142,24|4142" starExp="34000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀3星" lv="69" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|23860,6|44310,9|23860,10|44310,7|11930,8|22155,11|11930,12|22155,13|409020,14|500,21|4261,22|4261,23|4261,24|4261" starExp="36000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀4星" lv="70" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|24538,6|45572,9|24538,10|45572,7|12269,8|22786,11|12269,12|22786,13|420660,14|500,21|4382,22|4382,23|4382,24|4382" starExp="38000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀5星" lv="71" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|25232,6|46858,9|25232,10|46858,7|12616,8|23429,11|12616,12|23429,13|432540,14|500,21|4506,22|4506,23|4506,24|4506" starExp="40000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀6星" lv="72" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|25938,6|48172,9|25938,10|48172,7|12969,8|24086,11|12969,12|24086,13|444660,14|500,21|4632,22|4632,23|4632,24|4632" starExp="42000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀7星" lv="73" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|26660,6|49510,9|26660,10|49510,7|13330,8|24755,11|13330,12|24755,13|457020,14|500,21|4761,22|4761,23|4761,24|4761" starExp="44000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀8星" lv="74" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|27394,6|50876,9|27394,10|50876,7|13697,8|25438,11|13697,12|25438,13|469620,14|500,21|4892,22|4892,23|4892,24|4892" starExp="46000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀9星" lv="75" starUpgradeCostItemCount="7" stepUpgradeCostItemCount="0" batExp="5|28144,6|52266,9|28144,10|52266,7|14072,8|26133,11|14072,12|26133,13|482460,14|500,21|5026,22|5026,23|5026,24|5026" starExp="48000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="7階翅膀10星" lv="76" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="15" batExp="5|28906,6|53684,9|28906,10|53684,7|14453,8|26842,11|14453,12|26842,13|495540,14|500,21|5162,22|5162,23|5162,24|5162" starExp="0" stepMinExp="6500" stepMaxExp="10000" stepFailExp="35"/>
+			<star name="8階翅膀0星" lv="77" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|31905,6|59251,9|31905,10|59251,7|15952,8|29626,11|15952,12|29626,13|546936,14|500,21|5697,22|5697,23|5697,24|5697" starExp="50000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀1星" lv="78" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|32682,6|60694,9|32682,10|60694,7|16341,8|30347,11|16341,12|30347,13|560256,14|500,21|5836,22|5836,23|5836,24|5836" starExp="55000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀2星" lv="79" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|33473,6|62163,9|33473,10|62163,7|16736,8|31082,11|16736,12|31082,13|573816,14|500,21|5977,22|5977,23|5977,24|5977" starExp="60000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀3星" lv="80" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|34278,6|63658,9|34278,10|63658,7|17139,8|31829,11|17139,12|31829,13|587616,14|500,21|6121,22|6121,23|6121,24|6121" starExp="65000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀4星" lv="81" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|35097,6|65179,9|35097,10|65179,7|17548,8|32590,11|17548,12|32590,13|601656,14|500,21|6267,22|6267,23|6267,24|6267" starExp="70000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀5星" lv="82" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|35930,6|66726,9|35930,10|66726,7|17965,8|33363,11|17965,12|33363,13|615936,14|500,21|6416,22|6416,23|6416,24|6416" starExp="75000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀6星" lv="83" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|36777,6|68299,9|36777,10|68299,7|18388,8|34150,11|18388,12|34150,13|630456,14|500,21|6567,22|6567,23|6567,24|6567" starExp="80000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀7星" lv="84" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|37638,6|69898,9|37638,10|69898,7|18819,8|34949,11|18819,12|34949,13|645216,14|500,21|6721,22|6721,23|6721,24|6721" starExp="85000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀8星" lv="85" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|38513,6|71523,9|38513,10|71523,7|19256,8|35762,11|19256,12|35762,13|660216,14|500,21|6877,22|6877,23|6877,24|6877" starExp="90000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀9星" lv="86" starUpgradeCostItemCount="8" stepUpgradeCostItemCount="0" batExp="5|39402,6|73174,9|39402,10|73174,7|19701,8|36587,11|19701,12|36587,13|675456,14|500,21|7036,22|7036,23|7036,24|7036" starExp="95000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="8階翅膀10星" lv="87" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="20" batExp="5|40305,6|74851,9|40305,10|74851,7|20152,8|37426,11|20152,12|37426,13|690936,14|500,21|7197,22|7197,23|7197,24|7197" starExp="0" stepMinExp="7000" stepMaxExp="10000" stepFailExp="25"/>
+			<star name="9階翅膀0星" lv="88" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|43897,6|81523,9|43897,10|81523,7|21948,8|40762,11|21948,12|40762,13|752520,14|500,21|7839,22|7839,23|7839,24|7839" starExp="120000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀1星" lv="89" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|44814,6|83226,9|44814,10|83226,7|22407,8|41613,11|22407,12|41613,13|768240,14|500,21|8002,22|8002,23|8002,24|8002" starExp="125000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀2星" lv="90" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|45745,6|84955,9|45745,10|84955,7|22872,8|42478,11|22872,12|42478,13|784200,14|500,21|8169,22|8169,23|8169,24|8169" starExp="130000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀3星" lv="91" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|46690,6|86710,9|46690,10|86710,7|23345,8|43355,11|23345,12|43355,13|800400,14|500,21|8338,22|8338,23|8338,24|8338" starExp="135000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀4星" lv="92" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|47649,6|88491,9|47649,10|88491,7|23824,8|44246,11|23824,12|44246,13|816840,14|500,21|8509,22|8509,23|8509,24|8509" starExp="140000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀5星" lv="93" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|48622,6|90298,9|48622,10|90298,7|24311,8|45149,11|24311,12|45149,13|833520,14|500,21|8682,22|8682,23|8682,24|8682" starExp="145000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀6星" lv="94" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|49609,6|92131,9|49609,10|92131,7|24804,8|46066,11|24804,12|46066,13|850440,14|500,21|8859,22|8859,23|8859,24|8859" starExp="150000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀7星" lv="95" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|50610,6|93990,9|50610,10|93990,7|25305,8|46995,11|25305,12|46995,13|867600,14|500,21|9038,22|9038,23|9038,24|9038" starExp="155000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀8星" lv="96" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|51625,6|95875,9|51625,10|95875,7|25812,8|47938,11|25812,12|47938,13|885000,14|500,21|9219,22|9219,23|9219,24|9219" starExp="160000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀9星" lv="97" starUpgradeCostItemCount="9" stepUpgradeCostItemCount="0" batExp="5|52654,6|97786,9|52654,10|97786,7|26327,8|48893,11|26327,12|48893,13|902640,14|500,21|9402,22|9402,23|9402,24|9402" starExp="165000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="9階翅膀10星" lv="98" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="25" batExp="5|53697,6|99723,9|53697,10|99723,7|26848,8|49862,11|26848,12|49862,13|920520,14|500,21|9589,22|9589,23|9589,24|9589" starExp="0" stepMinExp="7500" stepMaxExp="10000" stepFailExp="17"/>
+			<star name="10階翅膀0星" lv="99" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|57883,6|107497,9|57883,10|107497,7|28941,8|53748,11|28941,12|53748,13|992280,14|500,21|10336,22|10336,23|10336,24|10336" starExp="180000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀1星" lv="100" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|58940,6|109460,9|58940,10|109460,7|29470,8|54730,11|29470,12|54730,13|1010400,14|500,21|10525,22|10525,23|10525,24|10525" starExp="185000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀2星" lv="101" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|60011,6|111449,9|60011,10|111449,7|30005,8|55724,11|30005,12|55724,13|1028760,14|500,21|10716,22|10716,23|10716,24|10716" starExp="190000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀3星" lv="102" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|61096,6|113464,9|61096,10|113464,7|30548,8|56732,11|30548,12|56732,13|1047360,14|500,21|10910,22|10910,23|10910,24|10910" starExp="195000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀4星" lv="103" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|62195,6|115505,9|62195,10|115505,7|31097,8|57752,11|31097,12|57752,13|1066200,14|500,21|11106,22|11106,23|11106,24|11106" starExp="200000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀5星" lv="104" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|63308,6|117572,9|63308,10|117572,7|31654,8|58786,11|31654,12|58786,13|1085280,14|500,21|11305,22|11305,23|11305,24|11305" starExp="205000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀6星" lv="105" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|64435,6|119665,9|64435,10|119665,7|32217,8|59832,11|32217,12|59832,13|1104600,14|500,21|11506,22|11506,23|11506,24|11506" starExp="210000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀7星" lv="106" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|65576,6|121784,9|65576,10|121784,7|32788,8|60892,11|32788,12|60892,13|1124160,14|500,21|11710,22|11710,23|11710,24|11710" starExp="215000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀8星" lv="107" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|66731,6|123929,9|66731,10|123929,7|33366,8|61964,11|33366,12|61964,13|1143960,14|500,21|11916,22|11916,23|11916,24|11916" starExp="220000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀9星" lv="108" starUpgradeCostItemCount="10" stepUpgradeCostItemCount="0" batExp="5|67900,6|126100,9|67900,10|126100,7|33950,8|63050,11|33950,12|63050,13|1164000,14|500,21|12125,22|12125,23|12125,24|12125" starExp="225000" stepMinExp="0" stepMaxExp="0" stepFailExp="0"/>
+			<star name="10階翅膀10星" lv="109" starUpgradeCostItemCount="0" stepUpgradeCostItemCount="25" batExp="5|69083,6|128297,9|69083,10|128297,7|34542,8|64148,11|34542,12|64148,13|1184280,14|500,21|12336,22|12336,23|12336,24|12336" starExp="0" stepMinExp="7500" stepMaxExp="10000" stepFailExp="1"/>
+		</stars>
+		
+	</wing>
+	
+	<!-- 附魂 -->
+	<soulSlot>
+			<!-- 升星  starUpgrade 星级="1" 百分比属性="5" 道具id="300001002" 个数="1" 直接成功率="2692" 上升概率="10000" 上升增加="33|35" 下降减少="15|20"-->
+			<soulPower>
+				<starUpgrade lv="1" attrRate="5" costItemId="300001007" costItemCount="1" successRate="2692" upRate="10000" upVal="33|35" downVal="0|0"/>
+				<starUpgrade lv="2" attrRate="10" costItemId="300001007" costItemCount="2" successRate="1384" upRate="9000" upVal="33|35" downVal="10|15"/>
+				<starUpgrade lv="3" attrRate="15" costItemId="300001007" costItemCount="3" successRate="606" upRate="8500" upVal="33|35" downVal="10|15"/>
+				<starUpgrade lv="4" attrRate="20" costItemId="300001007" costItemCount="3" successRate="331" upRate="7500" upVal="30|35" downVal="8|12"/>
+				<starUpgrade lv="5" attrRate="30" costItemId="300001008" costItemCount="1" successRate="367" upRate="7000" upVal="25|30" downVal="7|10"/>
+				<starUpgrade lv="6" attrRate="40" costItemId="300001008" costItemCount="2" successRate="362" upRate="6500" upVal="20|28" downVal="6|9"/>
+				<starUpgrade lv="7" attrRate="50" costItemId="300001008" costItemCount="3" successRate="340" upRate="6500" upVal="15|20" downVal="6|9"/>
+				<starUpgrade lv="8" attrRate="60" costItemId="300001008" costItemCount="3" successRate="340" upRate="6500" upVal="10|14" downVal="6|9"/>
+				<starUpgrade lv="9" attrRate="80" costItemId="300001009" costItemCount="1" successRate="340" upRate="6500" upVal="10|13" downVal="6|8"/>
+				<starUpgrade lv="10" attrRate="100" costItemId="300001009" costItemCount="2" successRate="340" upRate="6500" upVal="10|13" downVal="6|8"/>
+				<starUpgrade lv="11" attrRate="120" costItemId="300001009" costItemCount="3" successRate="340" upRate="6500" upVal="10|13" downVal="6|8"/>
+				<starUpgrade lv="12" attrRate="140" costItemId="300001009" costItemCount="3" successRate="340" upRate="6500" upVal="10|13" downVal="6|8"/>
+				<starUpgrade lv="13" attrRate="160" costItemId="300001010" costItemCount="1" successRate="340" upRate="6500" upVal="10|13" downVal="6|8"/>
+				<starUpgrade lv="14" attrRate="180" costItemId="300001010" costItemCount="1" successRate="340" upRate="6500" upVal="10|13" downVal="6|8"/>
+				<starUpgrade lv="15" attrRate="200" costItemId="300001010" costItemCount="1" successRate="340" upRate="6500" upVal="10|13" downVal="6|8"/>
+			</soulPower>
+			<!-- //洗练表达式:属性id|属性最小值|必出最小值|属性最大值|洗练权重 -->
+			<extract totalAtb="6|6000,10|6000,8|6000,12|6000,13|72000,21|4500,22|4500,23|4500,24|4500,19|900,20|900,25|45,26|45" initAtb="6|50,6|50,6|50,6|50,13|500,13|500,8|50,8|50,13|500,8|50">
+				<extractUpgrade quality="4" slot="1" costNormalItemId="300001004" extractNormalExp="6|1|1000|1000|1000,21|1|750|750|1000,23|1|750|750|1000,19|1|480|480|1000,25|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="6|201|1000|1000|1000,21|151|750|750|1000,23|151|750|750|1000,19|121|480|480|1000,25|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="2" costNormalItemId="300001004" extractNormalExp="6|1|1000|1000|1000,21|1|750|750|1000,23|1|750|750|1000,19|1|480|480|1000,25|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="6|201|1000|1000|1000,21|151|750|750|1000,23|151|750|750|1000,19|121|480|480|1000,25|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="3" costNormalItemId="300001004" extractNormalExp="6|1|1000|1000|1000,21|1|750|750|1000,23|1|750|750|1000,19|1|480|480|1000,25|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="6|201|1000|1000|1000,21|151|750|750|1000,23|151|750|750|1000,19|121|480|480|1000,25|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="4" costNormalItemId="300001004" extractNormalExp="6|1|1000|1000|1000,21|1|750|750|1000,23|1|750|750|1000,19|1|480|480|1000,25|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="6|201|1000|1000|1000,21|151|750|750|1000,23|151|750|750|1000,19|121|480|480|1000,25|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="5" costNormalItemId="300001004" extractNormalExp="13|1|12000|12000|1000,22|1|750|750|1000,24|1|750|750|1000,20|1|480|480|1000,26|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="13|2401|12000|12000|1000,22|151|750|750|1000,24|151|750|750|1000,20|121|480|480|1000,26|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="6" costNormalItemId="300001004" extractNormalExp="13|1|12000|12000|1000,22|1|750|750|1000,24|1|750|750|1000,20|1|480|480|1000,26|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="13|2401|12000|12000|1000,22|151|750|750|1000,24|151|750|750|1000,20|121|480|480|1000,26|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="7" costNormalItemId="300001004" extractNormalExp="13|1|12000|12000|1000,8|1|1000|1000|1000,12|1|1000|1000|1000,22|1|750|750|1000,24|1|750|750|1000,20|1|480|480|1000,26|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="13|2401|12000|12000|1000,8|201|1000|1000|1000,12|201|1000|1000|1000,22|151|750|750|1000,24|151|750|750|1000,20|121|480|480|1000,26|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="8" costNormalItemId="300001004" extractNormalExp="8|1|1000|1000|1000,12|1|1000|1000|1000,22|1|750|750|1000,24|1|750|750|1000,20|1|480|480|1000,26|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="8|201|1000|1000|1000,12|201|1000|1000|1000,22|151|750|750|1000,24|151|750|750|1000,20|121|480|480|1000,26|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="9" costNormalItemId="300001004" extractNormalExp="13|1|12000|12000|1000,8|1|1000|1000|1000,12|1|1000|1000|1000,22|1|750|750|1000,24|1|750|750|1000,20|1|480|480|1000,26|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="13|2401|12000|12000|1000,8|201|1000|1000|1000,12|201|1000|1000|1000,22|151|750|750|1000,24|151|750|750|1000,20|121|480|480|1000,26|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="4" slot="10" costNormalItemId="300001004" extractNormalExp="8|1|1000|1000|1000,12|1|1000|1000|1000,22|1|750|750|1000,24|1|750|750|1000,20|1|480|480|1000,26|1|24|24|1000" extractNormalNums="20" costAdvanceItemId="40" extractAdvanceExp="8|201|1000|1000|1000,12|201|1000|1000|1000,22|151|750|750|1000,24|151|750|750|1000,20|121|480|480|1000,26|7|24|24|1000" extractAdvanceNums="5"/>
+				<extractUpgrade quality="5" slot="1" costNormalItemId="300001005" extractNormalExp="6|201|3000|3000|1000,21|151|2250|2250|1000,23|151|2250|2250|1000,19|121|720|720|1000,25|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="6|401|3000|3000|1000,21|301|2250|2250|1000,23|301|2250|2250|1000,19|241|720|720|1000,25|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="2" costNormalItemId="300001005" extractNormalExp="6|201|3000|3000|1000,21|151|2250|2250|1000,23|151|2250|2250|1000,19|121|720|720|1000,25|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="6|401|3000|3000|1000,21|301|2250|2250|1000,23|301|2250|2250|1000,19|241|720|720|1000,25|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="3" costNormalItemId="300001005" extractNormalExp="6|201|3000|3000|1000,21|151|2250|2250|1000,23|151|2250|2250|1000,19|121|720|720|1000,25|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="6|401|3000|3000|1000,21|301|2250|2250|1000,23|301|2250|2250|1000,19|241|720|720|1000,25|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="4" costNormalItemId="300001005" extractNormalExp="6|201|3000|3000|1000,21|151|2250|2250|1000,23|151|2250|2250|1000,19|121|720|720|1000,25|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="6|401|3000|3000|1000,21|301|2250|2250|1000,23|301|2250|2250|1000,19|241|720|720|1000,25|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="5" costNormalItemId="300001005" extractNormalExp="13|2401|36000|36000|1000,22|151|2250|2250|1000,24|151|2250|2250|1000,20|121|720|720|1000,26|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="13|4801|36000|36000|1000,22|301|2250|2250|1000,24|301|2250|2250|1000,20|241|720|720|1000,26|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="6" costNormalItemId="300001005" extractNormalExp="13|2401|36000|36000|1000,22|151|2250|2250|1000,24|151|2250|2250|1000,20|121|720|720|1000,26|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="13|4801|36000|36000|1000,22|301|2250|2250|1000,24|301|2250|2250|1000,20|241|720|720|1000,26|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="7" costNormalItemId="300001005" extractNormalExp="13|2401|36000|36000|1000,8|201|3000|3000|1000,12|201|3000|3000|1000,22|151|2250|2250|1000,24|151|2250|2250|1000,20|121|720|720|1000,26|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="13|4801|36000|36000|1000,8|401|3000|3000|1000,12|401|3000|3000|1000,22|301|2250|2250|1000,24|301|2250|2250|1000,20|241|720|720|1000,26|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="8" costNormalItemId="300001005" extractNormalExp="8|201|3000|3000|1000,12|201|3000|3000|1000,22|151|2250|2250|1000,24|151|2250|2250|1000,20|121|720|720|1000,26|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="8|401|3000|3000|1000,12|401|3000|3000|1000,22|301|2250|2250|1000,24|301|2250|2250|1000,20|241|720|720|1000,26|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="9" costNormalItemId="300001005" extractNormalExp="13|2401|36000|36000|1000,8|201|3000|3000|1000,12|201|3000|3000|1000,22|151|2250|2250|1000,24|151|2250|2250|1000,20|121|720|720|1000,26|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="13|4801|36000|36000|1000,8|401|3000|3000|1000,12|401|3000|3000|1000,22|301|2250|2250|1000,24|301|2250|2250|1000,20|241|720|720|1000,26|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="5" slot="10" costNormalItemId="300001005" extractNormalExp="8|201|3000|3000|1000,12|201|3000|3000|1000,22|151|2250|2250|1000,24|151|2250|2250|1000,20|121|720|720|1000,26|7|36|36|1000" extractNormalNums="20" costAdvanceItemId="80" extractAdvanceExp="8|401|3000|3000|1000,12|401|3000|3000|1000,22|301|2250|2250|1000,24|301|2250|2250|1000,20|241|720|720|1000,26|13|36|36|1000" extractAdvanceNums="10"/>
+				<extractUpgrade quality="6" slot="1" costNormalItemId="300001006" extractNormalExp="6|401|6000|6000|1000,21|301|4500|4500|1000,23|301|4500|4500|1000,19|241|900|900|1000,25|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="6|801|6000|6000|1000,21|601|4500|4500|1000,23|601|4500|4500|1000,19|421|900|900|1000,25|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="2" costNormalItemId="300001006" extractNormalExp="6|401|6000|6000|1000,21|301|4500|4500|1000,23|301|4500|4500|1000,19|241|900|900|1000,25|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="6|801|6000|6000|1000,21|601|4500|4500|1000,23|601|4500|4500|1000,19|421|900|900|1000,25|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="3" costNormalItemId="300001006" extractNormalExp="6|401|6000|6000|1000,21|301|4500|4500|1000,23|301|4500|4500|1000,19|241|900|900|1000,25|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="6|801|6000|6000|1000,21|601|4500|4500|1000,23|601|4500|4500|1000,19|421|900|900|1000,25|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="4" costNormalItemId="300001006" extractNormalExp="6|401|6000|6000|1000,21|301|4500|4500|1000,23|301|4500|4500|1000,19|241|900|900|1000,25|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="6|801|6000|6000|1000,21|601|4500|4500|1000,23|601|4500|4500|1000,19|421|900|900|1000,25|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="5" costNormalItemId="300001006" extractNormalExp="13|4801|72000|72000|1000,22|301|4500|4500|1000,24|301|4500|4500|1000,20|241|900|900|1000,26|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="13|9601|72000|72000|1000,22|601|4500|4500|1000,24|601|4500|4500|1000,20|421|900|900|1000,26|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="6" costNormalItemId="300001006" extractNormalExp="13|4801|72000|72000|1000,22|301|4500|4500|1000,24|301|4500|4500|1000,20|241|900|900|1000,26|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="13|9601|72000|72000|1000,22|601|4500|4500|1000,24|601|4500|4500|1000,20|421|900|900|1000,26|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="7" costNormalItemId="300001006" extractNormalExp="13|4801|72000|72000|1000,8|401|6000|6000|1000,12|401|6000|6000|1000,22|301|4500|4500|1000,24|301|4500|4500|1000,20|241|900|900|1000,26|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="13|9601|72000|72000|1000,8|801|6000|6000|1000,12|801|6000|6000|1000,22|601|4500|4500|1000,24|601|4500|4500|1000,20|421|900|900|1000,26|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="8" costNormalItemId="300001006" extractNormalExp="8|401|6000|6000|1000,12|401|6000|6000|1000,22|301|4500|4500|1000,24|301|4500|4500|1000,20|241|900|900|1000,26|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="8|801|6000|6000|1000,12|801|6000|6000|1000,22|601|4500|4500|1000,24|601|4500|4500|1000,20|421|900|900|1000,26|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="9" costNormalItemId="300001006" extractNormalExp="13|4801|72000|72000|1000,8|401|6000|6000|1000,12|401|6000|6000|1000,22|301|4500|4500|1000,24|301|4500|4500|1000,20|241|900|900|1000,26|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="13|9601|72000|72000|1000,8|801|6000|6000|1000,12|801|6000|6000|1000,22|601|4500|4500|1000,24|601|4500|4500|1000,20|421|900|900|1000,26|22|45|45|1000" extractAdvanceNums="20"/>
+				<extractUpgrade quality="6" slot="10" costNormalItemId="300001006" extractNormalExp="8|401|6000|6000|1000,12|401|6000|6000|1000,22|301|4500|4500|1000,24|301|4500|4500|1000,20|241|900|900|1000,26|13|45|45|1000" extractNormalNums="20" costAdvanceItemId="160" extractAdvanceExp="8|801|6000|6000|1000,12|801|6000|6000|1000,22|601|4500|4500|1000,24|601|4500|4500|1000,20|421|900|900|1000,26|22|45|45|1000" extractAdvanceNums="20"/>
+			</extract>
+	</soulSlot>
+	<!-- 竞技场奖励-->
+	<rankAwards goldItemId="300004002" skillPointItemId="300004004">
+		<rankAward minRank="1" maxRank="1" gold="300000" skillPoint="10000" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="2" maxRank="2" gold="240000" skillPoint="8000" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="3" maxRank="3" gold="180000" skillPoint="6000" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="4" maxRank="10" gold="150000" skillPoint="5000" goldAdd="3000" skillPointAdd="100"/>
+		<rankAward minRank="11" maxRank="20" gold="120000" skillPoint="4000" goldAdd="3000" skillPointAdd="100"/>
+		<rankAward minRank="21" maxRank="30" gold="90000" skillPoint="3000" goldAdd="3000" skillPointAdd="100"/>
+		<rankAward minRank="31" maxRank="50" gold="75000" skillPoint="2500" goldAdd="600" skillPointAdd="20"/>
+		<rankAward minRank="51" maxRank="100" gold="60000" skillPoint="2000" goldAdd="300" skillPointAdd="10"/>
+		<rankAward minRank="101" maxRank="200" gold="54000" skillPoint="1800" goldAdd="60" skillPointAdd="2"/>
+		<rankAward minRank="201" maxRank="300" gold="51000" skillPoint="1700" goldAdd="30" skillPointAdd="1"/>
+		<rankAward minRank="301" maxRank="500" gold="45000" skillPoint="1500" goldAdd="30" skillPointAdd="1"/>
+		<rankAward minRank="501" maxRank="1000" gold="30000" skillPoint="1000" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="1001" maxRank="2000" gold="24000" skillPoint="800" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="2001" maxRank="3000" gold="18000" skillPoint="600" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="3001" maxRank="5000" gold="12000" skillPoint="400" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="5001" maxRank="10000" gold="6000" skillPoint="200" goldAdd="0" skillPointAdd="0"/>
+		<rankAward minRank="10001" maxRank="1000000" gold="3000" skillPoint="100" goldAdd="0" skillPointAdd="0"/>
+	</rankAwards>
+	<!-- PVP相关-->
+	<!-- 99为背包内的物品的掉率-->
+	<pvp>
+		<dropprobability quality="1" red="3000" white="150" minNum="1" maxNum="1"/>
+		<dropprobability quality="2" red="2000" white="100" minNum="1" maxNum="1"/>
+		<dropprobability quality="3" red="1000" white="50" minNum="1" maxNum="1"/>
+		<dropprobability quality="4" red="300" white="15" minNum="1" maxNum="1"/>
+		<dropprobability quality="5" red="100" white="5" minNum="1" maxNum="1"/>
+		<dropprobability quality="6" red="50" white="0" minNum="1" maxNum="1"/>
+		<dropprobability quality="99" red="5000" white="1000" minNum="1" maxNum="3"/>
+	</pvp>
+	
+	<!-- 在线时长相关,时间单位为毫秒数-->
+	<!-- 1 PK值减少时间，2 灰名变白时间,3 总的在线时间-->
+	<accumulativeTime>
+		<onlineTime id="1" value="300000" neadonline="1"/>
+		<onlineTime id="2" value="20000" neadonline="0" />
+		<onlineTime id="3" value="0" neadonline="1" />
+	</accumulativeTime>
+	<equipRandomAttsQualitys>
+		<equipRandomAttsQuality id="19" value="100|200|300|400|500" />
+		<equipRandomAttsQuality id="20" value="100|200|300|400|500" />
+		<equipRandomAttsQuality id="25" value="5|8|12|16|20" />
+		<equipRandomAttsQuality id="26" value="5|8|12|16|20" />
+		<equipRandomAttsQuality id="29" value="5|8|12|16|20" />
+		<equipRandomAttsQuality id="30" value="5|8|12|16|20" />
+		<equipRandomAttsQuality id="31" value="10|16|24|32|40" />
+		<equipRandomAttsQuality id="32" value="10|16|24|32|40" />
+		<equipRandomAttsQuality id="18" value="15|24|33|42|50" />
+	</equipRandomAttsQualitys>
+	<!-- 每个装备根据装备品质和装备等级随机对应的随机属性配置-->
+	<equipRandomAtts>
+		<equipRandomAtt id="1" level="20" quality="2" minAttNum="1" maxAttNum="1" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="2" level="20" quality="3" minAttNum="1" maxAttNum="2" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="3" level="20" quality="4" minAttNum="1" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="4" level="40" quality="2" minAttNum="1" maxAttNum="1" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="5" level="40" quality="3" minAttNum="1" maxAttNum="2" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="6" level="40" quality="4" minAttNum="1" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="7" level="60" quality="2" minAttNum="1" maxAttNum="1" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="8" level="60" quality="3" minAttNum="1" maxAttNum="2" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="9" level="60" quality="4" minAttNum="1" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="10" level="60" quality="5" minAttNum="2" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="11" level="80" quality="2" minAttNum="1" maxAttNum="1" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="12" level="80" quality="3" minAttNum="1" maxAttNum="2" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="13" level="80" quality="4" minAttNum="1" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="14" level="80" quality="5" minAttNum="2" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="15" level="1" quality="2" minAttNum="1" maxAttNum="1" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="16" level="1" quality="4" minAttNum="1" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="17" level="5" quality="3" minAttNum="1" maxAttNum="2" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+		<equipRandomAtt id="18" level="1" quality="5" minAttNum="2" maxAttNum="3" equipAttachs="19|100|500|100,20|100|500|100,25|5|20|60,26|5|20|100,29|5|20|100,30|5|20|80,31|10|40|80,32|10|40|100,18|15|50|80"/>
+	</equipRandomAtts>
+	<!-- 宠物星座配置-->
+	<pet>
+			<!-- 星座属性 ： 星座id="1" 开启需要转生等级="0" 抽取天赋库="id1|id2|id3"  1级随机概率="下降|不变|上升" 2级随机概率="下降|不变|上升"-->
+		<petConstells itemId="300099008" itemCount="1" diamond="50">
+			<petConstell constellId="1" openNode="0" constellAttachs="1|100,2|60,3|100,4|60" probability1="0|9000|1000,0|2000|8000" probability2="0|9500|500,0|9000|1000" probability3="0|9670|330,0|9330|670" probability4="0|9750|250,0|9500|500" probability5="0|10000|0,0|10000|0"/>
+			<petConstell constellId="2" openNode="1" constellAttachs="5|100,6|60,7|100,8|60" probability1="0|9000|1000,0|2000|8000" probability2="0|9500|500,0|9000|1000" probability3="0|9670|330,0|9330|670" probability4="0|9750|250,0|9500|500" probability5="0|10000|0,0|10000|0"/>
+			<petConstell constellId="3" openNode="2" constellAttachs="9|100,10|100,11|100,12|100" probability1="0|9000|1000,0|2000|8000" probability2="0|9500|500,0|9000|1000" probability3="0|9670|330,0|9330|670" probability4="0|9750|250,0|9500|500" probability5="0|10000|0,0|10000|0"/>
+			<petConstell constellId="4" openNode="3" constellAttachs="1|100,2|60,3|100,4|60" probability1="0|9000|1000,0|2000|8000" probability2="0|9500|500,0|9000|1000" probability3="0|9670|330,0|9330|670" probability4="0|9750|250,0|9500|500" probability5="0|10000|0,0|10000|0"/>
+			<petConstell constellId="5" openNode="4" constellAttachs="5|100,6|60,7|100,8|60" probability1="0|9000|1000,0|2000|8000" probability2="0|9500|500,0|9000|1000" probability3="0|9670|330,0|9330|670" probability4="0|9750|250,0|9500|500" probability5="0|10000|0,0|10000|0"/>
+			<petConstell constellId="6" openNode="5" constellAttachs="9|100,10|100,11|100,12|100" probability1="0|9000|1000,0|2000|8000" probability2="0|9500|500,0|9000|1000" probability3="0|9670|330,0|9330|670" probability4="0|9750|250,0|9500|500" probability5="0|10000|0,0|10000|0"/>
+		</petConstells>
+		<petAttachs>
+			<petAttach attachId="1" attachLevel="1" name="攻擊" icon="Innate_0004" attachValue="1|100,2|100"/>
+			<petAttach attachId="1" attachLevel="2" name="攻擊" icon="Innate_0004" attachValue="1|200,2|200"/>
+			<petAttach attachId="1" attachLevel="3" name="攻擊" icon="Innate_0004" attachValue="1|400,2|400"/>
+			<petAttach attachId="1" attachLevel="4" name="攻擊" icon="Innate_0004" attachValue="1|800,2|800"/>
+			<petAttach attachId="1" attachLevel="5" name="攻擊" icon="Innate_0004" attachValue="1|1500,2|1500"/>
+			<petAttach attachId="2" attachLevel="1" name="殘暴" icon="Innate_0002" attachValue="1|150,2|150"/>
+			<petAttach attachId="2" attachLevel="2" name="殘暴" icon="Innate_0002" attachValue="1|300,2|300"/>
+			<petAttach attachId="2" attachLevel="3" name="殘暴" icon="Innate_0002" attachValue="1|600,2|600"/>
+			<petAttach attachId="2" attachLevel="4" name="殘暴" icon="Innate_0002" attachValue="1|1200,2|1200"/>
+			<petAttach attachId="2" attachLevel="5" name="殘暴" icon="Innate_0002" attachValue="1|2250,2|2250"/>
+			<petAttach attachId="3" attachLevel="1" name="生命" icon="Innate_0010" attachValue="13|1000"/>
+			<petAttach attachId="3" attachLevel="2" name="生命" icon="Innate_0010" attachValue="13|2000"/>
+			<petAttach attachId="3" attachLevel="3" name="生命" icon="Innate_0010" attachValue="13|4000"/>
+			<petAttach attachId="3" attachLevel="4" name="生命" icon="Innate_0010" attachValue="13|8000"/>
+			<petAttach attachId="3" attachLevel="5" name="生命" icon="Innate_0010" attachValue="13|15000"/>
+			<petAttach attachId="4" attachLevel="1" name="強壯" icon="Innate_0008" attachValue="13|1500"/>
+			<petAttach attachId="4" attachLevel="2" name="強壯" icon="Innate_0008" attachValue="13|3000"/>
+			<petAttach attachId="4" attachLevel="3" name="強壯" icon="Innate_0008" attachValue="13|6000"/>
+			<petAttach attachId="4" attachLevel="4" name="強壯" icon="Innate_0008" attachValue="13|12000"/>
+			<petAttach attachId="4" attachLevel="5" name="強壯" icon="Innate_0008" attachValue="13|22500"/>
+			<petAttach attachId="5" attachLevel="1" name="物防" icon="Innate_0012" attachValue="3|80"/>
+			<petAttach attachId="5" attachLevel="2" name="物防" icon="Innate_0012" attachValue="3|160"/>
+			<petAttach attachId="5" attachLevel="3" name="物防" icon="Innate_0012" attachValue="3|320"/>
+			<petAttach attachId="5" attachLevel="4" name="物防" icon="Innate_0012" attachValue="3|640"/>
+			<petAttach attachId="5" attachLevel="5" name="物防" icon="Innate_0012" attachValue="3|1200"/>
+			<petAttach attachId="6" attachLevel="1" name="堅守" icon="Innate_0005" attachValue="3|120"/>
+			<petAttach attachId="6" attachLevel="2" name="堅守" icon="Innate_0005" attachValue="3|240"/>
+			<petAttach attachId="6" attachLevel="3" name="堅守" icon="Innate_0005" attachValue="3|480"/>
+			<petAttach attachId="6" attachLevel="4" name="堅守" icon="Innate_0005" attachValue="3|960"/>
+			<petAttach attachId="6" attachLevel="5" name="堅守" icon="Innate_0005" attachValue="3|1800"/>
+			<petAttach attachId="7" attachLevel="1" name="法防" icon="Innate_0003" attachValue="4|80"/>
+			<petAttach attachId="7" attachLevel="2" name="法防" icon="Innate_0003" attachValue="4|160"/>
+			<petAttach attachId="7" attachLevel="3" name="法防" icon="Innate_0003" attachValue="4|320"/>
+			<petAttach attachId="7" attachLevel="4" name="法防" icon="Innate_0003" attachValue="4|640"/>
+			<petAttach attachId="7" attachLevel="5" name="法防" icon="Innate_0003" attachValue="4|1200"/>
+			<petAttach attachId="8" attachLevel="1" name="穩固" icon="Innate_0011" attachValue="4|120"/>
+			<petAttach attachId="8" attachLevel="2" name="穩固" icon="Innate_0011" attachValue="4|240"/>
+			<petAttach attachId="8" attachLevel="3" name="穩固" icon="Innate_0011" attachValue="4|480"/>
+			<petAttach attachId="8" attachLevel="4" name="穩固" icon="Innate_0011" attachValue="4|960"/>
+			<petAttach attachId="8" attachLevel="5" name="穩固" icon="Innate_0011" attachValue="4|1800"/>
+			<petAttach attachId="9" attachLevel="1" name="命中" icon="Innate_0007" attachValue="21|60"/>
+			<petAttach attachId="9" attachLevel="2" name="命中" icon="Innate_0007" attachValue="21|120"/>
+			<petAttach attachId="9" attachLevel="3" name="命中" icon="Innate_0007" attachValue="21|240"/>
+			<petAttach attachId="9" attachLevel="4" name="命中" icon="Innate_0007" attachValue="21|480"/>
+			<petAttach attachId="9" attachLevel="5" name="命中" icon="Innate_0007" attachValue="21|900"/>
+			<petAttach attachId="10" attachLevel="1" name="閃避" icon="Innate_0009" attachValue="22|60"/>
+			<petAttach attachId="10" attachLevel="2" name="閃避" icon="Innate_0009" attachValue="22|120"/>
+			<petAttach attachId="10" attachLevel="3" name="閃避" icon="Innate_0009" attachValue="22|240"/>
+			<petAttach attachId="10" attachLevel="4" name="閃避" icon="Innate_0009" attachValue="22|480"/>
+			<petAttach attachId="10" attachLevel="5" name="閃避" icon="Innate_0009" attachValue="22|900"/>
+			<petAttach attachId="11" attachLevel="1" name="爆擊" icon="Innate_0001" attachValue="23|60"/>
+			<petAttach attachId="11" attachLevel="2" name="爆擊" icon="Innate_0001" attachValue="23|120"/>
+			<petAttach attachId="11" attachLevel="3" name="爆擊" icon="Innate_0001" attachValue="23|240"/>
+			<petAttach attachId="11" attachLevel="4" name="爆擊" icon="Innate_0001" attachValue="23|480"/>
+			<petAttach attachId="11" attachLevel="5" name="爆擊" icon="Innate_0001" attachValue="23|900"/>
+			<petAttach attachId="12" attachLevel="1" name="抗暴" icon="Innate_0006" attachValue="24|60"/>
+			<petAttach attachId="12" attachLevel="2" name="抗暴" icon="Innate_0006" attachValue="24|120"/>
+			<petAttach attachId="12" attachLevel="3" name="抗暴" icon="Innate_0006" attachValue="24|240"/>
+			<petAttach attachId="12" attachLevel="4" name="抗暴" icon="Innate_0006" attachValue="24|480"/>
+			<petAttach attachId="12" attachLevel="5" name="抗暴" icon="Innate_0006" attachValue="24|900"/>
+		</petAttachs>
+		<petSkill learn="0|10000,1|2000,2|500,3|100,4|50,5|20,6|0"/>
+		<petTalent learn="1|6,2|12,3|18,4|24"/>
+	</pet>
+	<!-- 幸运大转盘-->
+	<luckyWheel>
+		<item id="1"  freeTime="600"  award="300004002|15000|100,300004002|20000|100,300004002|30000|100,300001004|1|100,300001005|1|50,300001006|1|25,300001007|1|100,300001008|1|50,300001009|1|25,300004007|1|100,300004008|1|100,300004009|1|100,300099005|1|100,300099006|1|100,300001001|1|100,300001003|1|100,300099008|1|100,300004018|1|20" award2="300004002|15000|100,300004002|20000|100,300004002|30000|100,300001004|1|100,300001005|1|50,300001006|1|25,300001007|1|100,300001008|1|50,300001009|1|25,300004007|1|100,300004008|1|100,300004009|1|100,300099005|1|100,300099006|1|100,300001001|1|100,300001003|1|100,300099008|1|100,300004018|1|20" />
+	</luckyWheel>
+	<!-- 累计登录-->	
+	<totalLogin>
+		<day id="1" showItemId="300001001" drop="300001001|1|100,300004006|1|100,300001002|1|100,300004019|1|100,300004002|1000|100"/>
+		<day id="2" showItemId="300001007" drop="300001007|1|100,300001001|1|100,300004006|1|100,300001002|1|100,300004019|1|100"/>
+		<day id="3" showItemId="300001004" drop="300001004|1|100,300001007|1|100,300001001|1|100,300004006|1|100,300001002|1|100"/>
+		<day id="4" showItemId="300004007" drop="300004007|1|100,300001004|1|100,300001007|1|100,300001001|1|100,300004006|1|100"/>
+		<day id="5" showItemId="300099008" drop="300099008|1|100,300004007|1|100,300001004|1|100,300001007|1|100,300001001|1|100"/>
+		<day id="6" showItemId="300099006" drop="300099006|1|100,300099008|1|100,300004007|1|100,300001004|1|100,300001007|1|100"/>
+		<day id="7" showItemId="300004020" drop="300004020|1|100,300099006|1|100,300099008|1|100,300004007|1|100,300001004|1|100"/>	
+	</totalLogin>
+	<!-- 在线时长奖励-->	
+	<onlineTimeAwrod>
+		<onlineTimes id= "1" onlineTime ="180"    award ="300004002|1000,300001002|1" />
+		<onlineTimes id= "2" onlineTime ="600"  award ="300004002|2000,300001002|2,300099005|1" />
+		<onlineTimes id= "3" onlineTime ="1200"  award ="300004002|3000,300001002|3,300099005|1" />
+		<onlineTimes id= "4" onlineTime ="2400" award ="300004002|4000,300001002|4,300099005|1,300099006|1" />
+		<onlineTimes id= "5" onlineTime ="7200" award ="300004002|5000,300001002|5,300099005|1,300099006|1" />
+	</onlineTimeAwrod>
+	<!-- 月签到奖励-->
+	<!-- award="道具id|道具数量|翻倍VIP等级"-->
+	<monthAward>
+		<monthItem id="1" month="1" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="2" month="2" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="3" month="3" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="4" month="4" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="5" month="5" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="6" month="6" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="7" month="7" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="8" month="8" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="9" month="9" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="10" month="10" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="11" month="11" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+		<monthItem id="12" month="12" award="300004002|5000|0,300004008|1|1,300004017|20|0,300001002|5|2,300099008|2|0,300004017|30|1,300001007|1|0,300004002|10000|0,300004008|2|3,300004017|25|0,300001002|6|4,300099008|2|0,300004017|35|3,300001007|2|0,300004002|15000|0,300004008|3|5,300004017|30|0,300001002|7|6,300099008|3|0,300004017|40|5,300001008|1|0,300004002|20000|0,300004008|4|7,300004018|1|0,300001002|8|8,300099008|3|0,300004017|45|7,300001008|2|0"/>
+	</monthAward>
+	<!-- 活跃度奖励-->
+	<livelyAward>
+		<livelyItem id="1" needScore="30" award="300004002|5000,300001002|2,300099005|1"/>
+		<livelyItem id="2" needScore="60" award="300004002|10000,300001002|2,300099006|1"/>
+		<livelyItem id="3" needScore="100" award="300004002|15000,300001002|2,300001003|2"/>
+	</livelyAward>
+
+	
+	<!-- 强化套装加成-->
+	<powerSuitPlus>
+		<powerItem id="1" num="6" lv="3" atb="3|50,4|50,13|300"/>
+		<powerItem id="2" num="10" lv="3" atb="3|100,4|100,13|600"/>
+		<powerItem id="3" num="6" lv="6" atb="3|200,4|200,13|1200"/>
+		<powerItem id="4" num="10" lv="6" atb="3|300,4|300,13|1800"/>
+		<powerItem id="5" num="6" lv="9" atb="3|600,4|600,13|3600"/>
+		<powerItem id="6" num="10" lv="9" atb="3|900,4|900,13|10800"/>
+		<powerItem id="7" num="6" lv="12" atb="3|1500,4|1500,13|18000"/>
+		<powerItem id="8" num="10" lv="12" atb="3|2000,4|2000,13|24000"/>
+		<powerItem id="9" num="6" lv="15" atb="3|3000,4|3000,13|36000"/>
+		<powerItem id="10" num="10" lv="15" atb="3|4000,4|4000,13|48000"/>
+		<powerItem id="11" num="6" lv="20" atb="3|6000,4|6000,13|72000"/>
+		<powerItem id="12" num="10" lv="20" atb="3|7500,4|7500,13|90000"/>
+	</powerSuitPlus>
+	<!-- 升星套装加成-->	
+	<starSuitPlus>
+		<starItem id="1" num="6" lv="3" atb="3|800,4|800,13|4800"/>
+		<starItem id="2" num="10" lv="3" atb="3|1600,4|1600,13|9600"/>
+		<starItem id="3" num="6" lv="6" atb="3|2400,4|2400,13|14400"/>
+		<starItem id="4" num="10" lv="6" atb="3|3600,4|3600,13|21600"/>
+		<starItem id="5" num="6" lv="9" atb="3|4800,4|4800,13|28800"/>
+		<starItem id="6" num="10" lv="9" atb="3|7200,4|7200,13|43200"/>
+		<starItem id="7" num="6" lv="12" atb="3|9600,4|9600,13|57600"/>
+		<starItem id="8" num="10" lv="12" atb="3|14400,4|14400,13|86400"/>
+		<starItem id="9" num="6" lv="15" atb="3|19200,4|19200,13|115200"/>
+		<starItem id="10" num="10" lv="15" atb="3|24000,4|24000,13|144000"/>
+	</starSuitPlus>
+	<!-- 洗练套装加成-->	
+	<washSuitPlus>
+		<washItem id="1" num="10" lv="8" atb="3|1600,4|1600,13|9600"/>
+		<washItem id="2" num="20" lv="8" atb="3|2400,4|2400,13|14400"/>
+		<washItem id="3" num="30" lv="8" atb="3|3600,4|3600,13|21600"/>
+		<washItem id="4" num="10" lv="12" atb="3|4800,4|4800,13|28800"/>
+		<washItem id="5" num="20" lv="12" atb="3|7200,4|7200,13|43200"/>
+		<washItem id="6" num="30" lv="12" atb="3|9600,4|9600,13|57600"/>
+		<washItem id="7" num="10" lv="15" atb="3|14400,4|14400,13|86400"/>
+		<washItem id="8" num="20" lv="15" atb="3|19200,4|19200,13|115200"/>
+		<washItem id="9" num="30" lv="15" atb="3|24000,4|24000,13|144000"/>
+	</washSuitPlus>
+	<!-- 连斩buff-->	
+	<sustainKills>
+		<sustainKill killNum="10" buffId="95"/>
+		<sustainKill killNum="50" buffId="96"/>
+		<sustainKill killNum="100" buffId="97"/>
+		<sustainKill killNum="1000" buffId="98"/>
+	</sustainKills>
+	
+	<!-- 月卡奖励 奖励id|奖励数量-->	
+	<monthCard awards="300004017|100,300004007|1,300001002|2,300004019|5,300099005|1,300099008|1">
+	</monthCard>
+	
+	<!--首冲奖励 奖励id|奖励数量-->	
+	<firstRecharge awards="108|1,109|1,300004018|1,300004002|100000">
+	</firstRecharge>
+	
+	<!--facebook绑定奖励 奖励id|奖励数量-->	
+	<fbBindAward awards="300004017|100">
+	</fbBindAward>
+				
+	<killingTower>  <!-- 杀人爬塔 -->
+		<toweritem layer="1" needKillNum="2" awards="300099006|3,300004020|1,300004094|2500" nextLayer="1"/>
+		<toweritem layer="2" needKillNum="2" awards="300099006|3,300004020|1,300004094|3000" nextLayer="1"/>
+		<toweritem layer="3" needKillNum="2" awards="300099006|3,300004020|1,300004094|3500" nextLayer="1"/>
+		<toweritem layer="4" needKillNum="3" awards="300099006|3,300004020|1,300004094|4000" nextLayer="1"/>
+		<toweritem layer="5" needKillNum="3" awards="300099006|5,300004020|2,300004094|4500" nextLayer="1"/>
+		<toweritem layer="6" needKillNum="3" awards="300099006|5,300004020|2,300004094|5000" nextLayer="1"/>
+		<toweritem layer="7" needKillNum="4" awards="300099006|5,300004020|2,300004094|5500" nextLayer="1"/>
+		<toweritem layer="8" needKillNum="4" awards="300099006|5,300004020|2,300004094|6000" nextLayer="1"/>
+		<toweritem layer="9" needKillNum="4" awards="300099006|5,300004020|2,300004094|6500" nextLayer="1"/>
+		<toweritem layer="10" needKillNum="5" awards="300099006|7,300004020|3,300004094|7000" nextLayer="1"/>
+		<toweritem layer="11" needKillNum="5" awards="300099006|7,300004020|3,300004094|7500" nextLayer="1"/>
+		<toweritem layer="12" needKillNum="5" awards="300099006|7,300004020|3,300004094|8000" nextLayer="1"/>
+		<toweritem layer="13" needKillNum="6" awards="300099006|7,300004020|3,300004094|8500" nextLayer="1"/>
+		<toweritem layer="14" needKillNum="7" awards="300099006|7,300004020|3,300004094|9000" nextLayer="1"/>
+		<toweritem layer="15" needKillNum="8" awards="300099006|9,300004020|5,300004094|9500" nextLayer="1"/>
+		<toweritem layer="16" needKillNum="9" awards="300099006|9,300004020|5,300004094|10000" nextLayer="1"/>
+		<toweritem layer="17" needKillNum="10" awards="300099006|9,300004020|5,300004094|10500" nextLayer="1"/>
+		<toweritem layer="18" needKillNum="12" awards="300099006|9,300004020|5,300004094|11000" nextLayer="1"/>
+		<toweritem layer="19" needKillNum="15" awards="300099006|11,300004020|6,300004094|11500" nextLayer="1"/>
+		<toweritem layer="20" needKillNum="100" awards="300099006|11,300004020|6,300004094|12000" nextLayer="1"/>
+	</killingTower>
+<!--运镖相关配置-->
+	<trade> 
+		<cart quality="0" monsterId="450000001" freshWeight="0" expPar="70" prestigePar="70" />
+		<cart quality="1" monsterId="450000002" freshWeight="32" expPar="80" prestigePar="80" />
+		<cart quality="2" monsterId="450000003" freshWeight="40" expPar="90" prestigePar="100" />
+		<cart quality="3" monsterId="450000004" freshWeight="20" expPar="100" prestigePar="150" />
+		<cart quality="4" monsterId="450000005" freshWeight="6" expPar="110" prestigePar="200" />
+		<cart quality="5" monsterId="450000006" freshWeight="2" expPar="130" prestigePar="300" />
+	</trade>
+	
+	<!--各个系统初始次数预设 420 背包数量-->
+	<!--各个系统初始次数预设 440 仓库背包数量-->
+	<!--各个系统初始次数预设 1 竞技场次数-->
+	<!--各个系统初始次数预设 2 通天塔数量-->
+	<!--各个系统初始次数预设 3 PK之王-->
+	<!--各个系统初始次数预设 4 魔化危机-->
+	<!--各个系统初始次数预设 5 恶灵禁地-->
+	<!--各个系统初始次数预设 6 血魔堡垒-->
+	<!--各个系统初始次数预设 7 守护水晶-->
+	<!--各个系统初始次数预设 10物资车刷新|次数-->
+	<!--各个系统初始次数预设 11每天死亡后免费复活|次数-->
+	<!--各个系统初始次数预设 13运镖|次数-->
+	<!--各个系统初始次数预设 510日常任务-->
+	<!--各个系统初始次数预设 520经验副本-->
+	<!--各个系统初始次数预设 530通天塔挑战次数-->
+	<!--各个系统初始次数预设 540危机边缘-->
+	<playTimes>
+		<playItem id="1"  timesType="1" initialTimes="10"  buyConsumId="15" buyTimes="5"/>
+		<playItem id="2"  timesType="2" initialTimes="2"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="3"  timesType="3" initialTimes="1"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="4"  timesType="4" initialTimes="1"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="5"  timesType="5" initialTimes="2"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="6"  timesType="6" initialTimes="2"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="7"  timesType="7" initialTimes="2"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="8"  timesType="10" initialTimes="5"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="9"  timesType="11" initialTimes="3"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="10"  timesType="13" initialTimes="2"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="11"  timesType="420" initialTimes="80"  buyConsumId="22" buyTimes="10000"/>
+		<playItem id="12"  timesType="440" initialTimes="120"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="13"  timesType="510" initialTimes="10"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="14"  timesType="520" initialTimes="2"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="15"  timesType="530" initialTimes="5"  buyConsumId="0" buyTimes="0"/>
+		<playItem id="16"  timesType="540" initialTimes="1"  buyConsumId="20" buyTimes="10000"/>
+		<playItem id="17"  timesType="550" initialTimes="3"  buyConsumId="0" buyTimes="0"/>
+	</playTimes>
+	
+		<!-- 奖励找回-->
+	<awardRetrieves>
+		<awardRetrieve id="1"  timesType="1" name="競技場" openLv="12" gold="10000" goldAward="300004004|0|420,300004002|37|0" diamond="5" diamondAward="300004004|0|600,300004002|50|0"/>
+		<awardRetrieve id="2"  timesType="3" name="PK之王" openLv="30" gold="80000" goldAward="300004094|0|1680,300004046|0|2250" diamond="30" diamondAward="300004094|0|2250,300004046|0|3000"/>
+		<awardRetrieve id="3"  timesType="4" name="魔化危機" openLv="30" gold="80000" goldAward="300004001|7500|-112500,300004021|0|2250" diamond="30" diamondAward="300004001|10000|-150000,300004021|0|3000"/>
+		<awardRetrieve id="4"  timesType="5" name="惡靈禁地" openLv="25" gold="40000" goldAward="300004001|2250|-33750,300004002|0|22500" diamond="15" diamondAward="300004001|3000|-45000,300004002|0|30000"/>
+		<awardRetrieve id="5"  timesType="6" name="血魔堡壘 " openLv="30" gold="40000" goldAward="300004001|2250|-33750,300004002|0|22500" diamond="15" diamondAward="300004001|3000|-45000,300004002|0|30000"/>
+		<awardRetrieve id="6"  timesType="7" name="守護水晶" openLv="40" gold="80000" goldAward="300004001|9000|-135000" diamond="30" diamondAward="300004001|12000|-180000"/>
+		<awardRetrieve id="7"  timesType="13" name="運鏢" openLv="42" gold="50000" goldAward="300004001|9000|-135000,300004046|0|2250" diamond="20" diamondAward="300004001|12000|-180000,300004046|0|3000"/>
+		<awardRetrieve id="8"  timesType="510" name="日常任務" openLv="20" gold="20000" goldAward="300004001|1500|-22500,300004002|0|3000" diamond="10" diamondAward="300004001|2000|-30000,300004002|0|4000"/>
+		<awardRetrieve id="9"  timesType="520" name="經驗副本" openLv="27" gold="50000" goldAward="300004001|7500|-112500" diamond="20" diamondAward="300004001|10000|-150000"/>
+	</awardRetrieves>
+	
+	
+	<!--复活消耗金币数量-->
+	<reviveCosts>
+		<reviveCost id="1"  extraMinTimes="1" extraMaxTimes="1"  buyPrice="1000" buyDiamond="0"/>		
+		<reviveCost id="2"  extraMinTimes="2" extraMaxTimes="2"  buyPrice="2000" buyDiamond="0"/>		
+		<reviveCost id="3"  extraMinTimes="3" extraMaxTimes="3"  buyPrice="5000" buyDiamond="0"/>		
+		<reviveCost id="4"  extraMinTimes="4" extraMaxTimes="4"  buyPrice="10000" buyDiamond="0"/>		
+		<reviveCost id="5"  extraMinTimes="5" extraMaxTimes="5"  buyPrice="20000" buyDiamond="0"/>		
+		<reviveCost id="6"  extraMinTimes="6" extraMaxTimes="6"  buyPrice="40000" buyDiamond="0"/>		
+		<reviveCost id="7"  extraMinTimes="7" extraMaxTimes="7"  buyPrice="60000" buyDiamond="0"/>		
+		<reviveCost id="8"  extraMinTimes="8" extraMaxTimes="8"  buyPrice="80000" buyDiamond="0"/>		
+		<reviveCost id="9"  extraMinTimes="9" extraMaxTimes="9"  buyPrice="100000" buyDiamond="0"/>		
+		<reviveCost id="10"  extraMinTimes="10" extraMaxTimes="9999999"  buyPrice="100000" buyDiamond="0"/>	
+	</reviveCosts>
+	
+	<!--膜拜 1:金币； 2：钻石-->
+	<worship>
+		<worshipItem id="1"  gold="0"  diamond="0" awards="300004001|50000" />
+		<worshipItem id="2"  gold="0" diamond="100"  awards="300004001|1500000" />
+	</worship>
+	
+	<!--绝世珍宝-->
+	<treasures>
+		<treasure id="1" type="2" awardItem="" treasureImage="923001|923001|923001" treasureIcon="s_923001|s_923001|s_923001" title="絕世神翼" descrip="[60ff00]佩戴後可以獲得飛翔效果，[e2cfac]所有屬性大幅提升，戰力至少提升1000|[60ff00]佩戴後可以獲得飛翔效果，[e2cfac]所有屬性大幅提升，戰力至少提升1000|[60ff00]佩戴後可以獲得飛翔效果，[e2cfac]所有屬性大幅提升，戰力至少提升1000" finishDes="完成8級主線任務獲得" />
+		<treasure id="2" type="2" awardItem="" treasureImage="110002|120006|130003" treasureIcon="s_110002|s_120006|s_130003" title="絕世神技"  descrip="[e2cfac]【範圍攻擊】[60ff00]裂地斬：發動驚天一擊，對[e2cfac]多個目標造成傷害|[e2cfac]【範圍凍結攻擊】[60ff00]寒冰箭：對前方扇形區域射出具有寒冰之力的弓箭，[e2cfac]每個被射中的目標受到傷害並減速|[e2cfac]【範圍凍結魔法】[60ff00]冰魄之力：法師抽取空間中的冰魄之力，對自身附近目標造成魔法傷害並減速" finishDes="完成15級主線任務獲得" />
+		<treasure id="3" type="2" awardItem="" treasureImage="310100003|320100003|330100003" treasureIcon="s_310100003|s_320100003|s_330100003" title="絕世神兵" descrip="[e2cfac]【特強裝備】[60ff00]相傳是上古時期的神器，40級之前的最高品質裝備。[e2cfac]裝備時攻擊力提升500|[e2cfac]【特強裝備】[60ff00]相傳是上古時期的神器，40級之前的最高品質裝備。[e2cfac]裝備時攻擊力提升500|[e2cfac]【特強裝備】[60ff00]相傳是上古時期的神器，40級之前的最高品質裝備。[e2cfac]裝備時攻擊力提升500" finishDes ="完成20級主線任務獲得" />
+		<treasure id="4" type="2" awardItem="" treasureImage="951072|951072|951072" treasureIcon="s_951072|s_951072|s_951072" title="絕世神寵" descrip="[e2cfac]【特強紫色伙伴】[60ff00]能駕馭神雷的閃電獅鷲，和你並肩作戰|[e2cfac]【特強紫色伙伴】[60ff00]能駕馭神雷的閃電獅鷲，和你並肩作戰|[e2cfac]【特強紫色伙伴】[60ff00]能駕馭神雷的閃電獅鷲，和你並肩作戰" finishDes="完成24級主線任務獲得" />
+	</treasures>
+	
+	<cimelias>		
+		<cimelia id="1"  awardItem="300004092|1" treasureImage="heaven_pet|heaven_pet|heaven_pet"  title="提交指定數量的三種道具可獲得隨機橙色寵物"  taskItem="300001001|100,300010080|4,300010081|4" taskSource="野外打怪、分解裝備可獲得|拍賣行購買可獲得,通關惡靈禁地和血魔堡壘可獲得| ,通關或掃蕩通天塔5層和10層可獲得|拍賣行購買可獲得" />
+		<cimelia id="2"  awardItem="300004051|1" treasureImage="heaven_item|heaven_item|heaven_item"  title="提交指定數量的三種道具可獲得隨機橙色裝備"  taskItem="300001002|80,300010082|5,300010083|5" taskSource="野外打怪、分解裝備可獲得|拍賣行購買可獲得,自由之戰結算獎勵可獲得|拍賣行購買可獲得,魔魂危機結算獎勵可獲得| " />
+		<cimelia id="3"  awardItem="300004093|1" treasureImage="heaven_gemstone|heaven_gemstone|heaven_gemstone"  title="提交可獲得：洗煉石*200，初級升星石*200"  taskItem="300001003|60,300010084|6,300010085|6" taskSource="野外打怪、分解裝備可獲得|拍賣行購買可獲得,擊殺世界40級以上boss可獲得|拍賣行購買可獲得,採集至尊水晶可獲得|拍賣行購買可獲得" />
+	</cimelias>	
+	
+	<!--离线经验-->
+	<offLineRewards>
+		<offLineReward minLv="25" maxLv="30" exp="200" bindGold="60"/>
+		<offLineReward minLv="31" maxLv="35" exp="260" bindGold="65"/>
+		<offLineReward minLv="36" maxLv="40" exp="330" bindGold="70"/>
+		<offLineReward minLv="41" maxLv="45" exp="390" bindGold="75"/>
+		<offLineReward minLv="46" maxLv="50" exp="460" bindGold="80"/>
+		<offLineReward minLv="51" maxLv="55" exp="520" bindGold="85"/>
+		<offLineReward minLv="56" maxLv="60" exp="580" bindGold="90"/>
+		<offLineReward minLv="61" maxLv="65" exp="650" bindGold="95"/>
+		<offLineReward minLv="66" maxLv="70" exp="710" bindGold="100"/>
+		<offLineReward minLv="71" maxLv="75" exp="780" bindGold="105"/>
+		<offLineReward minLv="76" maxLv="80" exp="840" bindGold="110"/>
+		<offLineReward minLv="81" maxLv="85" exp="900" bindGold="115"/>
+		<offLineReward minLv="86" maxLv="90" exp="970" bindGold="120"/>
+		<offLineReward minLv="91" maxLv="95" exp="1030" bindGold="125"/>
+		<offLineReward minLv="96" maxLv="100" exp="1100" bindGold="130"/>
+	</offLineRewards>
+	
+	
+	<!--系统资源不足提醒功能 1=强化 2=升星 3=洗练 4=宝石合成 5=成就升级 6=伙伴升级 7=伙伴转生 8=伙伴星盘 9=伙伴技能 10=军衔升级 11=翅膀升级 12=翅膀升阶-->
+	<itemAcquisitionTips>
+		<acquisitionTips systemId="1" itemName="強化" provenance="33|分解裝備"/>
+		<acquisitionTips systemId="2" itemName="升星" provenance="26|商城購買,8|材料副本"/>
+		<acquisitionTips systemId="3" itemName="洗練" provenance="26|商城購買,8|材料副本"/>
+		<acquisitionTips systemId="4" itemName="寶石合成" provenance="26|商城購買,34|幸運輪盤"/>
+		<acquisitionTips systemId="5" itemName="成就升級" provenance="26|商城購買,9|極限亂鬥,30|公會BOSS"/>
+		<acquisitionTips systemId="6" itemName="伙伴升級" provenance="24|伙伴分解"/>
+		<acquisitionTips systemId="7" itemName="伙伴轉生" provenance="24|橙色伙伴分解"/>
+		<acquisitionTips systemId="8" itemName="伙伴星盤進化" provenance="26|商城購買,8|伙伴材料副本"/>
+		<acquisitionTips systemId="9" itemName="伙伴技能激活" provenance="26|商城購買,8|伙伴材料副本"/>
+		<acquisitionTips systemId="10" itemName="軍銜升級" provenance="10|運送物資車,9|魔魂危機,9|PK之王"/>
+		<acquisitionTips systemId="11" itemName="翅膀升級" provenance="26|商城購買,3|通天塔"/>
+		<acquisitionTips systemId="12" itemName="翅膀升階" provenance="26|商城購買,3|通天塔"/>
+		<acquisitionTips systemId="13" itemName="技能升級" provenance="2|競技場"/>
+	</itemAcquisitionTips>
+	
+	<!-- 成长基金(1.通用; 2.韩国) -->
+	<growFunds>
+		<growFund id="1" moneyType="6" onceAward="700"  award="30|280,40|480,50|680,60|880,70|1080,75|1280,80|1580" />
+		<growFund id="2" moneyType="6" onceAward="700"  award="1|100,2|100,3|100,4|100,5|100,6|100,7|100,8|100,9|100,10|100,11|100,12|100,13|100,14|100,15|100,16|100,17|100,18|100,19|100,20|100,21|100,22|100,23|100,24|100,25|100,26|100,27|100,28|100,29|100,30|100" />
+	</growFunds>
+	
+	<diamondBasins validTime="7">
+		<diamondBasin times="1" diamond="88" needVipExp="50" value="105|132|40,132|176|60" />
+		<diamondBasin times="2" diamond="288" needVipExp="150" value="345|403|40,403|518|60" />
+		<diamondBasin times="3" diamond="888" needVipExp="500" value="1065|1198|50,1198|1332|50" />
+		<diamondBasin times="4" diamond="2588" needVipExp="1500" value="3105|3493|60,3493|3882|40" />
+		<diamondBasin times="5" diamond="8888" needVipExp="6000" value="10665|11998|60,11998|13332|40" />
+		<diamondBasin times="6" diamond="18888" needVipExp="12000" value="22665|25498|60,25498|28332|40" />
+	</diamondBasins>
+</constantFile>
+			

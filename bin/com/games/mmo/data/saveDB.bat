@@ -1,0 +1,1 @@
+mysqldump -hlocalhost -uroot -proot  mmo_db >mmo_db.sql
